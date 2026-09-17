@@ -1,5 +1,11 @@
 # Change Log
 
+## 2026-09-17 Change Request 007
+
+- Replaced three platform images with differentiated subjects and color systems while retaining Technology.
+- Restored Implementation Heritage to its Version-6 structure.
+- Restored Where PUL Fits to its Version-6 image-card layout.
+
 ## 2026-09-17 Change Request 006
 
 - Rebuilt the platform cards with coordinated executive imagery.

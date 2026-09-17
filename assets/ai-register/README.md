@@ -17,6 +17,14 @@ These images were generated for the PUL prototype on 2026-09-16. They do not dep
 
 The four platform images were generated with the built-in image-generation tool on 2026-09-17 as a coordinated Fortune 500-style editorial set. They contain no client logos or claims of actual project activity.
 
+| ID | Asset | Purpose | Status | Disclosure |
+|---|---|---|---|---|
+| AIG-009 | `platform-management-v2.webp` | Warm architectural management-advisory card | Prototype | Conceptual visualization |
+| AIG-010 | `platform-capacity-v2.webp` | Teal/coral hands-on capacity-building card | Prototype | Conceptual visualization |
+| AIG-011 | `platform-mission-v2.webp` | Amber industrial logistics and mission-support card | Prototype | Conceptual visualization |
+
+These replacements deliberately use different subjects, compositions, and color systems. `platform-technology-v1.webp` remains the approved technology visual.
+
 Create one record per generated asset containing:
 
 - Asset ID and filename

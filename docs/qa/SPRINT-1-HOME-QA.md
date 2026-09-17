@@ -57,6 +57,12 @@
 - Five approved-profile client logos render in the institutional-heritage section
 - Four optimized AI platform WebP assets render with descriptive alternative text
 - Contextual strategy-call actions verified after Who We Are, How We Deliver, and Where PUL Fits
+- Version 8 platform imagery visually reviewed at 1440 by 900 and 390 by 844
+- Management, Capacity Building, Technology, and Mission Support cards use four distinct subjects and color treatments
+- Technology platform image remains unchanged from version 7
+- Implementation Heritage restored to the prior text-led experience layout
+- Where PUL Fits restored to the prior three-environment image layout
+- Version 8 regression check found zero broken images and zero horizontal overflow at desktop and mobile widths
 
 ## Pending
 

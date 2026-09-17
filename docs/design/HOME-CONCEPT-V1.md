@@ -1,6 +1,6 @@
-# Home Concept Version 7
+# Home Concept Version 8
 
-- Status: Review after Change Request 006
+- Status: Review after Change Request 007
 - Date: 2026-09-16
 - Preview: `prototype/index.html`
 
@@ -57,6 +57,12 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 - Recasts buyer fit as a structured market architecture without photography.
 - Gives Insights a differentiated editorial-card treatment.
 - Strengthens Who We Are copy and adds contextual strategy-call pathways.
+
+## Version 8 refinements
+
+- Keeps the Technology card and introduces distinctly colored advisory, capacity-building, and logistics imagery.
+- Restores Implementation Heritage to the Version-6 presentation.
+- Restores Where PUL Fits to the Version-6 image-card presentation.
 
 ## Included sections
 
