@@ -8,6 +8,35 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     });
   });
+  const counters = document.querySelectorAll('[data-counter]');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const animateCounter = counter => {
+    const start = Number(counter.dataset.start);
+    const end = Number(counter.dataset.end);
+    const suffix = counter.dataset.suffix || '';
+    if (reducedMotion) {
+      counter.textContent = `${end.toLocaleString()}${suffix}`;
+      return;
+    }
+    const duration = 1900;
+    const started = performance.now();
+    const frame = now => {
+      const progress = Math.min((now - started) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = `${Math.round(start + (end - start) * eased).toLocaleString()}${suffix}`;
+      if (progress < 1) requestAnimationFrame(frame);
+    };
+    requestAnimationFrame(frame);
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    }), { threshold: .45 });
+    counters.forEach(counter => observer.observe(counter));
+  } else counters.forEach(animateCounter);
   const toggle = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
   if (!toggle || !nav) return;

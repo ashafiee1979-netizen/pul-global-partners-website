@@ -37,6 +37,11 @@
 - Home callback form and dedicated strategy-call form render with required fields
 - Schedule page mobile first viewport reviewed
 - Home, Solutions, Schedule, and all three new image assets return HTTP 200 locally
+- Official high-resolution logo source and prototype asset have identical SHA-256 hashes
+- Metric counters include explicit start/end values and reduced-motion handling
+- Version 5 enlarged logo, navigation, and revised brand line reviewed at 1440 by 900
+- Version 5 mobile header and completed headline state reviewed at 390 by 844
+- Count-up animation visually reviewed in progress and at the final `30+`, `1,000+`, `10,000+`, and `2026` values
 
 ## Pending
 

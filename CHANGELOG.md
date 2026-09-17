@@ -1,5 +1,13 @@
 # Change Log
 
+## 2026-09-16 Change Request 004
+
+- Enlarged the verified original PUL logo and primary navigation.
+- Updated the brand line to “Strategy. Solutions. Execution.”
+- Slowed the Home headline animation.
+- Replaced gold accents with the public site’s brighter blue direction.
+- Added accessible, viewport-triggered metric count-up animations.
+
 ## 2026-09-16 Change Request 003
 
 - Replaced the Home capability CTA with a direct Solutions pathway.

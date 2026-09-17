@@ -1,12 +1,12 @@
-# Home Concept Version 4
+# Home Concept Version 5
 
-- Status: Review after Change Request 003
+- Status: Review after Change Request 004
 - Date: 2026-09-16
 - Preview: `prototype/index.html`
 
 ## Direction
 
-The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra Tech’s institutional organization and project storytelling. PUL’s navy, blue, white, light-neutral, and restrained-gold palette remains the visual authority.
+The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra Tech’s institutional organization and project storytelling. PUL’s navy, bright blue, white, and light-neutral palette remains the visual authority.
 
 ## Version 2 refinements
 
@@ -32,6 +32,14 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 - Simplifies the four platform cards into larger, color-coded visual pathways linked to matching Solutions sections.
 - Rebuilds the delivery model as a connected five-stage journey.
 - Replaces small buyer symbols with three AI-generated operating-environment visuals.
+
+## Version 5 refinements
+
+- Enlarges the verified original high-resolution PUL logo and primary navigation.
+- Replaces “Global Execution” with “Execution” and applies a light-blue emphasis treatment.
+- Slows the main headline reveal.
+- Aligns accent colors more closely with the public website’s navy and bright blue and removes visible gold accents.
+- Animates the four institutional metrics from their approved starting values to final values when scrolled into view.
 
 ## Included sections
 
