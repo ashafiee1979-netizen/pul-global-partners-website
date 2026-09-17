@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       counter.textContent = `${end.toLocaleString()}${suffix}`;
       return;
     }
-    const duration = 1900;
+    const duration = 4200;
     const started = performance.now();
     const frame = now => {
       const progress = Math.min((now - started) / duration, 1);

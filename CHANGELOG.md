@@ -1,5 +1,12 @@
 # Change Log
 
+## 2026-09-17 Change Request 005
+
+- Moved the animated institutional metrics directly below the Home hero.
+- Restored the requested metric labels and 2010 heritage value.
+- Slowed the metric animation to 4.2 seconds.
+- Removed the Execution box and enlarged the white brand line.
+
 ## 2026-09-16 Change Request 004
 
 - Enlarged the verified original PUL logo and primary navigation.

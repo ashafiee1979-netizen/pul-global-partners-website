@@ -1,6 +1,6 @@
-# Home Concept Version 5
+# Home Concept Version 6
 
-- Status: Review after Change Request 004
+- Status: Review after Change Request 005
 - Date: 2026-09-16
 - Preview: `prototype/index.html`
 
@@ -40,6 +40,13 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 - Slows the main headline reveal.
 - Aligns accent colors more closely with the public website’s navy and bright blue and removes visible gold accents.
 - Animates the four institutional metrics from their approved starting values to final values when scrolled into view.
+
+## Version 6 refinements
+
+- Moves the animated institutional metrics into a dedicated band directly below the hero.
+- Restores the executive-approved metric values and labels.
+- Slows the count-up animation to 4.2 seconds.
+- Removes the “Execution” box and presents the full brand line as larger white text.
 
 ## Included sections
 

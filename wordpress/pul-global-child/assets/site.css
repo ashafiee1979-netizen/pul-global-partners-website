@@ -29,3 +29,7 @@
 @media(max-width:980px){.primary-nav{gap:19px}.primary-nav a{font-size:.9rem}.brand img{width:225px}}
 @media(max-width:760px){.nav-row{height:82px}.brand img{width:195px;max-height:54px}.hero{height:auto}.hero-brand-line{display:flex;flex-wrap:wrap;max-width:330px}.hero-brand-line strong{padding:4px 9px}.animated-headline span{animation-duration:.95s}.animated-headline span:nth-child(2){animation-delay:.28s}.animated-headline span:nth-child(3){animation-delay:.56s}}
 :root{--gold:#4a90e2}:focus-visible{outline-color:#83c5f4}
+
+/* Home version 6 hero metrics and brand statement */
+.hero-brand-line{display:block;color:#fff;font-size:clamp(1.35rem,2.15vw,2rem);font-weight:800}.hero-brand-line strong{background:none;border:0;padding:0;color:#fff}.impact-strip{background:var(--navy-2);color:#fff}.impact-strip .metrics{margin:0 auto;border:0}.impact-strip .metrics div{padding-block:31px}.impact-strip .metrics strong{font-size:2.75rem}.impact-strip .metrics span{color:#b9d8ea}
+@media(max-width:760px){.hero-brand-line{display:block;max-width:none;font-size:1.25rem}.hero-brand-line strong{padding:0}.impact-strip .metrics{grid-template-columns:1fr 1fr}.impact-strip .metrics div{padding:22px 14px}.impact-strip .metrics div:first-child{padding-left:14px}.impact-strip .metrics strong{font-size:2.2rem}}
