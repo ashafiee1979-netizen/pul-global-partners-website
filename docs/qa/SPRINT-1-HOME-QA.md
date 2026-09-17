@@ -22,6 +22,13 @@
 - Redundant Home/header UEI, CAGE, and email utility information removed
 - Solutions page desktop first viewport reviewed at 1440 by 900
 - Both Home and Solutions HTML files parse successfully
+- Home browser title verified as `Home | PUL Global Partners`
+- Home navigation item and current-page state verified on desktop
+- Hero brand line and enriched capability statement reviewed at 1440 by 900 and 390 by 844
+- Animated headline final visibility and transform state verified
+- Reduced-motion fallback included in CSS
+- Home credential band removed
+- Revised “Who we are” scale and section spacing visually reviewed
 
 ## Pending
 

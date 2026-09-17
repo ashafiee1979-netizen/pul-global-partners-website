@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-09-16 Change Request 002
+
+- Added Home browser and navigation tab naming.
+- Strengthened the hero brand statement and complete-solution introduction.
+- Added accessible headline reveal animation.
+- Removed the Home credential band.
+- Tightened section spacing and strengthened the “Who we are” hierarchy.
+- Verified the revised Home first viewport on desktop and mobile.
+
 ## 2026-09-16 Change Request 001
 
 - Integrated the official PUL Global Partners logo.

@@ -27,6 +27,11 @@
 - Redundant UEI, CAGE, and header contact information removed from the Home prototype.
 - Desktop hero aligned to a 1440 by 900 review viewport.
 - Solutions page version 1 created from current-site service language and final Company Profile structure.
+- Change Request 002 implemented in the Home prototype.
+- Dedicated Home navigation item and browser title added.
+- Hero brand line enlarged and solution statement enriched.
+- Main Home headline given an accessible sequential reveal animation.
+- Home credential band removed and vertical section rhythm tightened.
 
 ## Current decisions
 
@@ -38,7 +43,7 @@
 
 ## Next session starts here
 
-1. Review executive feedback on the revised responsive Home page and Solutions page concepts.
+1. Review executive feedback on Home concept version 3 and Solutions concept version 1.
 2. Record requested design or content changes through change control.
 3. Convert the accepted Home and Solutions concepts into WordPress templates and reusable Elementor component specifications.
 4. Begin the Projects and About page design stories after the visual baseline is accepted.

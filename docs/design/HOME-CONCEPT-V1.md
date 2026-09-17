@@ -1,4 +1,4 @@
-# Home Concept Version 2
+# Home Concept Version 3
 
 - Status: Review after Change Request 001
 - Date: 2026-09-16
@@ -15,6 +15,15 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 - Constrains the desktop hero to the visible desktop-screen range.
 - Simplifies the Home credential band to platform, location, heritage, and partner-role information.
 - Connects the Home navigation to the new Solutions page prototype.
+
+## Version 3 refinements
+
+- Adds a dedicated Home item to primary navigation and names the browser tab Home.
+- Promotes “Strategy. Solutions. Global Execution.” into a stronger hero statement.
+- Expands the opening copy to reflect the full approved solution portfolio.
+- Animates the main headline through an accessible sequential line reveal.
+- Removes the four-item credential band completely.
+- Tightens global section spacing and strengthens the “Who we are” hierarchy.
 
 ## Included sections
 
