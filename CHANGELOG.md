@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-09-17 Change Request 006
+
+- Rebuilt the platform cards with coordinated executive imagery.
+- Replaced the delivery icons with a governed five-gate framework.
+- Replaced buyer-fit imagery with a professional market architecture.
+- Added selected client logos extracted from the approved Company Profile.
+- Restyled the Insights cards and increased section-label hierarchy.
+- Enriched Who We Are and added contextual strategy-call actions.
+
 ## 2026-09-17 Change Request 005
 
 - Moved the animated institutional metrics directly below the Home hero.

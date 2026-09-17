@@ -1,6 +1,6 @@
-# Home Concept Version 6
+# Home Concept Version 7
 
-- Status: Review after Change Request 005
+- Status: Review after Change Request 006
 - Date: 2026-09-16
 - Preview: `prototype/index.html`
 
@@ -47,6 +47,16 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 - Restores the executive-approved metric values and labels.
 - Slows the count-up animation to 4.2 seconds.
 - Removes the “Execution” box and presents the full brand line as larger white text.
+
+## Version 7 refinements
+
+- Introduces larger, background-aware section labels.
+- Replaces platform numbers and icons with a coordinated four-image editorial system.
+- Adds selected source-backed client logos to implementation heritage.
+- Recasts delivery as a five-gate executive operating framework.
+- Recasts buyer fit as a structured market architecture without photography.
+- Gives Insights a differentiated editorial-card treatment.
+- Strengthens Who We Are copy and adds contextual strategy-call pathways.
 
 ## Included sections
 

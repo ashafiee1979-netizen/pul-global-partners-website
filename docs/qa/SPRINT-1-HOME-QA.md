@@ -48,6 +48,15 @@
 - Metric animation duration verified at 4.2 seconds
 - No `Global Execution` text remains in prototype HTML
 - Final regression audit confirmed Home, Solutions, and Schedule return HTTP 200
+- Version 7 platform, heritage, delivery, buyer-fit, and Insights sections visually reviewed at 1440 by 900
+- Version 7 complete Home page visually reviewed at 390 by 844
+- No horizontal overflow detected at 1440 or 390 px
+- All Home images loaded successfully with nonzero intrinsic dimensions
+- Platform-card numbering and generic icons removed
+- Buyer-fit image count verified as zero
+- Five approved-profile client logos render in the institutional-heritage section
+- Four optimized AI platform WebP assets render with descriptive alternative text
+- Contextual strategy-call actions verified after Who We Are, How We Deliver, and Where PUL Fits
 
 ## Pending
 

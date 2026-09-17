@@ -8,6 +8,15 @@
 
 These images were generated for the PUL prototype on 2026-09-16. They do not depict an actual PUL project, client, employee, or location and must remain contextual, not evidentiary.
 
+| ID | Asset | Purpose | Status | Disclosure |
+|---|---|---|---|---|
+| AIG-005 | `platform-management-v1.webp` | Management consulting platform card | Prototype | Conceptual visualization |
+| AIG-006 | `platform-capacity-v1.webp` | Capacity-building platform card | Prototype | Conceptual visualization |
+| AIG-007 | `platform-technology-v1.webp` | Technology platform card | Prototype | Conceptual visualization |
+| AIG-008 | `platform-mission-v1.webp` | Trade, logistics, and mission-support platform card | Prototype | Conceptual visualization |
+
+The four platform images were generated with the built-in image-generation tool on 2026-09-17 as a coordinated Fortune 500-style editorial set. They contain no client logos or claims of actual project activity.
+
 Create one record per generated asset containing:
 
 - Asset ID and filename

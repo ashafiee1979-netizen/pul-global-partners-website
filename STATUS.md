@@ -41,6 +41,8 @@
 - Home palette, navigation, brand line, animation timing, and metric presentation revised.
 - Change Request 005 implemented in the local prototype.
 - Institutional metrics moved below the hero and slowed; brand-line box removed.
+- Change Request 006 implemented in the local prototype.
+- Platform, delivery, buyer-fit, heritage-logo, Insights, section-label, and conversion treatments rebuilt for executive review.
 
 ## Current decisions
 
@@ -52,7 +54,7 @@
 
 ## Next session starts here
 
-1. Review executive feedback on Home concept version 6, Solutions concept version 1, and the strategy-call flow.
+1. Review executive feedback on Home concept version 7, Solutions concept version 1, and the strategy-call flow.
 2. Record requested design or content changes through change control.
 3. Confirm the production scheduling provider and form-processing destination.
 4. Convert the accepted Home and Solutions concepts into WordPress templates and reusable Elementor component specifications.
