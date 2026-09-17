@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/site.css?v=9">
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-  <script src="../assets/site.js" defer></script>
+  <script src="../assets/site.js?v=9" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -19,7 +19,10 @@
       <a class="brand" href="../" aria-label="PUL Global Partners home"><img src="../assets/images/pul-global-partners-horizontal.png" alt="PUL Global Partners" width="2835" height="564"></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle title="Open navigation"><i data-lucide="menu" aria-hidden="true"></i><span class="sr-only">Open navigation</span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav><a href="../">Home</a><a class="is-current" href="./">Solutions</a><a href="../#about">About Us</a><a href="../#experience">Projects</a><a href="../#insights">Insights</a><a href="../#contact">Contact</a></nav>
-      <a class="button button-small nav-action" href="#capability-statement"><i data-lucide="download" aria-hidden="true"></i>Capability Statement</a>
+      <div class="nav-actions">
+        <a class="button button-small nav-call" href="../schedule/"><i data-lucide="calendar-days" aria-hidden="true"></i>Schedule Call</a>
+        <a class="button button-small button-outline nav-action" href="#capability-statement"><i data-lucide="file-down" aria-hidden="true"></i>Capability Statement</a>
+      </div>
     </div>
   </header>
 

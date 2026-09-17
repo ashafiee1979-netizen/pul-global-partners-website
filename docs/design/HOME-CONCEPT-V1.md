@@ -1,12 +1,22 @@
-# Home Concept Version 8
+# Home Concept Version 9
 
-- Status: Review after Change Request 007
+- Status: Review after Change Request 008
 - Date: 2026-09-16
 - Preview: `prototype/index.html`
 
 ## Direction
 
 The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra Tech’s institutional organization and project storytelling. PUL’s navy, bright blue, white, and light-neutral palette remains the visual authority.
+
+## Version 9 refinements
+
+- Benchmarks the separate PUL Global Executive Prototype while maintaining an independent PUL design direction.
+- Adds a concise institutional-trust rail with transparent heritage language and restrained monochrome logo treatment.
+- Strengthens Who We Are with three scannable delivery attributes instead of dense credential cards.
+- Recasts the five-gate framework as an executive operating model with consistent professional line icons.
+- Adds responsive Schedule Call and Capability Statement actions to the global header.
+- Carries the same header, palette, typography, and spacing system into Solutions and Strategy Call.
+- Preserves the Version 8 platform imagery and the user-approved Implementation Heritage and Where PUL Fits layouts.
 
 ## Version 2 refinements
 

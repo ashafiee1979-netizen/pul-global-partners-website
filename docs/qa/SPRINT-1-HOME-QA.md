@@ -63,11 +63,19 @@
 - Implementation Heritage restored to the prior text-led experience layout
 - Where PUL Fits restored to the prior three-environment image layout
 - Version 8 regression check found zero broken images and zero horizontal overflow at desktop and mobile widths
+- Version 9 Home first viewport, Who We Are, platform system, and delivery framework visually reviewed at desktop width
+- Version 9 Home hero, Who We Are, and platform cards visually reviewed at 390 by 844
+- Version 9 Solutions and Strategy Call first viewports visually reviewed at desktop width
+- Five institutional trust marks load with nonzero intrinsic dimensions
+- Version 9 mobile regression check found zero broken images and no horizontal overflow
+- Global header actions collapse without overlap at desktop, tablet, and mobile breakpoints
+- Mobile menu interaction verified on the Strategy Call page; `aria-expanded` and open-state class update correctly
+- Solutions and Strategy Call pages pass mobile broken-image and horizontal-overflow checks
 
 ## Pending
 
 - Tablet breakpoint review
-- Keyboard traversal and mobile menu interaction test
+- Full keyboard traversal test
 - Automated accessibility scan
 - Lighthouse performance run
 - Firefox and Safari review

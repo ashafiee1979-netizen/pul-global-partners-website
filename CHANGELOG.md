@@ -1,5 +1,15 @@
 # Change Log
 
+## 2026-09-17 Change Request 008
+
+- Audited the separate PUL Global Executive Prototype at desktop width and identified its strongest trust, content, and operating-model patterns.
+- Added a restrained institutional trust rail with five approved-profile organization marks and explicit heritage disclosure.
+- Added three executive delivery attributes to Who We Are without repeating registration identifiers or contact details.
+- Rebuilt the five-gate delivery framework as a quieter, higher-clarity operating model with professional line icons.
+- Added a two-action executive header that adapts cleanly across desktop, tablet, and mobile widths.
+- Applied the Version 9 visual system consistently to Home, Solutions, and Strategy Call pages.
+- Retained the approved Version 8 platform imagery, Implementation Heritage structure, and Where PUL Fits layout.
+
 ## 2026-09-17 Change Request 007
 
 - Replaced three platform images with differentiated subjects and color systems while retaining Technology.
