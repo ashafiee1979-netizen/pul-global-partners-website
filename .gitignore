@@ -1,0 +1,23 @@
+# Credentials and environment secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Production exports and backups
+*.sql
+*.sql.gz
+*.zip
+backups/
+
+# Local and generated files
+.DS_Store
+Thumbs.db
+node_modules/
+vendor/
+.cache/
+tmp/
+*.log
+
+# QA renders are not source artifacts
+qa-renders/
