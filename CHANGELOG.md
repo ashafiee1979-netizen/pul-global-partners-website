@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-09-16 Change Request 001
+
+- Integrated the official PUL Global Partners logo.
+- Removed redundant registration and contact details from the Home header and footer.
+- Aligned the Home hero with the desktop viewport.
+- Simplified the Home credential band.
+- Created the first Solutions page concept using existing-site terminology aligned with the final Company Profile.
+- Updated design, QA, status, and change-control records.
+
 ## 2026-09-16 Sprint 1 start
 
 - Recorded executive approval of Project Management Plan version 1.0.

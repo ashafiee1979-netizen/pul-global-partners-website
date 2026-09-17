@@ -6,7 +6,7 @@
 - Plan version: 1.0 approved
 - Implementation authorization: Granted by user on 2026-09-16
 - Production changes: None
-- Active blockers: Home concept requires executive review before it becomes the approved visual baseline
+- Active blockers: Revised Home and Solutions concepts require executive review before they become the approved visual baseline
 
 ## Completed
 
@@ -22,6 +22,11 @@
 - First AI-generated hero image created, governed, copied into the project, and integrated into the prototype.
 - Desktop full-page and 390 px mobile first-viewport visual QA completed.
 - Horizontal overflow check passed at the 390 px breakpoint.
+- Change Request 001 implemented in the local prototype.
+- Official PUL Global Partners logo integrated into Home, Solutions, and footer designs.
+- Redundant UEI, CAGE, and header contact information removed from the Home prototype.
+- Desktop hero aligned to a 1440 by 900 review viewport.
+- Solutions page version 1 created from current-site service language and final Company Profile structure.
 
 ## Current decisions
 
@@ -33,12 +38,12 @@
 
 ## Next session starts here
 
-1. Review executive feedback on the first responsive Home page concept.
+1. Review executive feedback on the revised responsive Home page and Solutions page concepts.
 2. Record requested design or content changes through change control.
-3. Convert the accepted Home concept into the WordPress front-page template and reusable Elementor component specification.
-4. Begin the Capabilities and Projects page design stories after the visual baseline is accepted.
+3. Convert the accepted Home and Solutions concepts into WordPress templates and reusable Elementor component specifications.
+4. Begin the Projects and About page design stories after the visual baseline is accepted.
 
 ## Last session
 
 - Date: 2026-09-16
-- Result: Sprint 1 started; first responsive Home prototype and WordPress child-theme foundation prepared for review.
+- Result: Change Request 001 implemented; revised Home and first Solutions prototype prepared for review.

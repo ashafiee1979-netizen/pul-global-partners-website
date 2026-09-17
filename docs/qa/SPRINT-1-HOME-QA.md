@@ -17,6 +17,11 @@
 - Generated image is labeled as an illustrative visualization
 - HTML parsed successfully
 - PNG hero source optimized to WebP from 1,825,813 bytes to 111,380 bytes
+- Official PUL Global Partners logo loads from the high-resolution transparent source
+- Revised Home hero reviewed at 1440 by 900 and aligned to the desktop viewport
+- Redundant Home/header UEI, CAGE, and email utility information removed
+- Solutions page desktop first viewport reviewed at 1440 by 900
+- Both Home and Solutions HTML files parse successfully
 
 ## Pending
 
@@ -27,6 +32,7 @@
 - Lighthouse performance run
 - Firefox and Safari review
 - Production WordPress template integration
+- Full Solutions-page desktop and mobile visual review
 
 ## Environment note
 

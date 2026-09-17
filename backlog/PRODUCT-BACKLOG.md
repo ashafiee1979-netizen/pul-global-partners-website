@@ -6,8 +6,8 @@ Status values: Proposed, Ready, In Progress, Review, Accepted, Deferred.
 |---|---|---|---|
 | P0 | Governance and evidence | In Progress | Approved facts, claims, assets, and ownership |
 | P0 | Design foundation | In Progress | Responsive PUL design system and components |
-| P0 | Home | Review | Approved homepage concept and implementation |
-| P0 | Capabilities | Proposed | Four-platform capability experience and PDF access |
+| P0 | Home | Review | Revised homepage concept and implementation |
+| P0 | Capabilities | Review | Four-platform Solutions concept and capability statement access |
 | P0 | Projects | Proposed | Evidence-led institutional experience presentation |
 | P1 | About | Proposed | Entity, heritage, leadership, and operating model |
 | P1 | Contact | Proposed | Qualified inquiry and capability-download journey |

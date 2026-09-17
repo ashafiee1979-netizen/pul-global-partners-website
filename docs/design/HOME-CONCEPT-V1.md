@@ -1,12 +1,20 @@
-# Home Concept Version 1
+# Home Concept Version 2
 
-- Status: Review
+- Status: Review after Change Request 001
 - Date: 2026-09-16
 - Preview: `prototype/index.html`
 
 ## Direction
 
 The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra Tech’s institutional organization and project storytelling. PUL’s navy, blue, white, light-neutral, and restrained-gold palette remains the visual authority.
+
+## Version 2 refinements
+
+- Uses the official high-resolution transparent PUL Global Partners horizontal logo.
+- Removes the top utility bar and redundant UEI, CAGE, and contact repetition.
+- Constrains the desktop hero to the visible desktop-screen range.
+- Simplifies the Home credential band to platform, location, heritage, and partner-role information.
+- Connects the Home navigation to the new Solutions page prototype.
 
 ## Included sections
 
