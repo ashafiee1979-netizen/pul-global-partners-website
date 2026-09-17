@@ -1,5 +1,13 @@
 # AI Asset Register
 
+| ID | Asset | Purpose | Status | Disclosure |
+|---|---|---|---|---|
+| AIG-002 | `buyer-federal-missions-v1.webp` | Federal agencies and overseas missions visual | Prototype | Illustrative visualization |
+| AIG-003 | `buyer-prime-development-v1.webp` | Prime contractors and development implementers visual | Prototype | Illustrative visualization |
+| AIG-004 | `buyer-international-private-v1.webp` | International organizations and private-sector partners visual | Prototype | Illustrative visualization |
+
+These images were generated for the PUL prototype on 2026-09-16. They do not depict an actual PUL project, client, employee, or location and must remain contextual, not evidentiary.
+
 Create one record per generated asset containing:
 
 - Asset ID and filename

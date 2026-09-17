@@ -1,6 +1,6 @@
-# Home Concept Version 3
+# Home Concept Version 4
 
-- Status: Review after Change Request 001
+- Status: Review after Change Request 003
 - Date: 2026-09-16
 - Preview: `prototype/index.html`
 
@@ -25,20 +25,27 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 - Removes the four-item credential band completely.
 - Tightens global section spacing and strengthens the “Who we are” hierarchy.
 
+## Version 4 refinements
+
+- Replaces the main capability CTA with “Discover Our Solutions.”
+- Adds a dedicated strategy-call request experience and a Home callback form.
+- Simplifies the four platform cards into larger, color-coded visual pathways linked to matching Solutions sections.
+- Rebuilds the delivery model as a connected five-stage journey.
+- Replaces small buyer symbols with three AI-generated operating-environment visuals.
+
 ## Included sections
 
 1. Utility bar and primary navigation
 2. Image-led enterprise hero
-3. Corporate credential band
-4. Entity and heritage introduction
-5. Four business platforms
-6. Institutional experience and metrics
-7. Five-step delivery model
-8. Buyer and partner pathways
-9. Capability statement call to action
-10. Capability-aligned insight previews
-11. Requirement discussion call to action
-12. Corporate footer
+3. Entity and heritage introduction
+4. Four linked business platforms
+5. Institutional experience and metrics
+6. Visual five-stage delivery journey
+7. Image-led buyer and partner pathways
+8. Capability statement call to action
+9. Capability-aligned insight previews
+10. Strategy-call and callback conversion paths
+11. Corporate footer
 
 ## Verification completed
 

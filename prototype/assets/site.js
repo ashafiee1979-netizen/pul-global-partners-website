@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   if (window.lucide) window.lucide.createIcons();
+  document.querySelectorAll('[data-prototype-form]').forEach(form => {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const status = form.querySelector('.form-status');
+      if (status) status.textContent = 'Thank you. Our team will review your request and respond within two business days.';
+      form.reset();
+    });
+  });
   const toggle = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
   if (!toggle || !nav) return;

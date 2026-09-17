@@ -29,10 +29,17 @@
 - Reduced-motion fallback included in CSS
 - Home credential band removed
 - Revised “Who we are” scale and section spacing visually reviewed
+- Home version 4 full-page desktop review completed at 1440 by 900
+- Home version 4 full-page mobile review completed at 390 by 844
+- Four platform links route to matching anchored Solutions sections
+- Connected delivery journey remains readable in desktop and mobile layouts
+- Three buyer-environment WebP assets load successfully
+- Home callback form and dedicated strategy-call form render with required fields
+- Schedule page mobile first viewport reviewed
+- Home, Solutions, Schedule, and all three new image assets return HTTP 200 locally
 
 ## Pending
 
-- Full mobile page screenshot across all sections
 - Tablet breakpoint review
 - Keyboard traversal and mobile menu interaction test
 - Automated accessibility scan

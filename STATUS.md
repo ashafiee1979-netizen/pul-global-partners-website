@@ -32,6 +32,10 @@
 - Hero brand line enlarged and solution statement enriched.
 - Main Home headline given an accessible sequential reveal animation.
 - Home credential band removed and vertical section rhythm tightened.
+- Change Request 003 implemented in the local prototype.
+- Home platform cards now route to anchored Solutions sections.
+- Visual delivery journey and three governed buyer-environment images added.
+- Strategy-call request page and Home callback form added.
 
 ## Current decisions
 
@@ -43,12 +47,13 @@
 
 ## Next session starts here
 
-1. Review executive feedback on Home concept version 3 and Solutions concept version 1.
+1. Review executive feedback on Home concept version 4, Solutions concept version 1, and the strategy-call flow.
 2. Record requested design or content changes through change control.
-3. Convert the accepted Home and Solutions concepts into WordPress templates and reusable Elementor component specifications.
-4. Begin the Projects and About page design stories after the visual baseline is accepted.
+3. Confirm the production scheduling provider and form-processing destination.
+4. Convert the accepted Home and Solutions concepts into WordPress templates and reusable Elementor component specifications.
+5. Begin the Projects and About page design stories after the visual baseline is accepted.
 
 ## Last session
 
 - Date: 2026-09-16
-- Result: Change Request 001 implemented; revised Home and first Solutions prototype prepared for review.
+- Result: Change Request 003 implemented; Home conversion, visual storytelling, and scheduling concepts prepared for review.

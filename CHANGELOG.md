@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-09-16 Change Request 003
+
+- Replaced the Home capability CTA with a direct Solutions pathway.
+- Added a strategy-call request page and Home callback form.
+- Rebuilt the platform overview as four large, color-coded links to relevant Solutions sections.
+- Recast the delivery process as a connected visual journey.
+- Added three governed AI-generated operating-environment visuals.
+- Mirrored shared assets and styles into the WordPress child-theme scaffold.
+
 ## 2026-09-16 Change Request 002
 
 - Added Home browser and navigation tab naming.
