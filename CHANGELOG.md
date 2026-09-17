@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-09-16 Sprint 1 start
+
+- Recorded executive approval of Project Management Plan version 1.0.
+- Started the design foundation and Home page epic.
+- Created a responsive local Home page prototype and WordPress Blocksy child-theme scaffold.
+- Added the first governed AI-generated hero visual.
+- Completed initial desktop and mobile visual QA.
+- Kept the production website unchanged.
+
 ## 2026-09-16
 
 - Created project governance repository.

@@ -1,0 +1,42 @@
+# Home Concept Version 1
+
+- Status: Review
+- Date: 2026-09-16
+- Preview: `prototype/index.html`
+
+## Direction
+
+The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra Tech’s institutional organization and project storytelling. PUL’s navy, blue, white, light-neutral, and restrained-gold palette remains the visual authority.
+
+## Included sections
+
+1. Utility bar and primary navigation
+2. Image-led enterprise hero
+3. Corporate credential band
+4. Entity and heritage introduction
+5. Four business platforms
+6. Institutional experience and metrics
+7. Five-step delivery model
+8. Buyer and partner pathways
+9. Capability statement call to action
+10. Capability-aligned insight previews
+11. Requirement discussion call to action
+12. Corporate footer
+
+## Verification completed
+
+- Desktop first viewport reviewed in Chrome
+- Desktop full page reviewed in Chrome
+- Mobile first viewport reviewed at 390 by 844
+- Mobile navigation breakpoint and menu control rendered correctly
+- No page-level horizontal overflow at 390 px
+- Generated hero image has descriptive alternative text and an illustrative-visualization disclosure
+- Production website remains unchanged
+
+## Approval needed
+
+- Visual tone and typography
+- Hero image and crop
+- Headline and opening proposition
+- Section order and information density
+- Use of institutional-experience examples on the Home page
