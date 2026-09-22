@@ -74,6 +74,10 @@
 - Version 10 confirms no institutional logo rail remains beneath the Home hero
 - Four requested organization marks render below the Implementation Heritage engagement table
 - USAID, The World Bank, GIZ, and Creative Associates optical sizes visually reviewed in a single desktop row
+- Version 11 Home and Solutions first viewports visually reviewed at desktop width
+- Home and Solutions description copy normalized to a readable and consistent responsive scale
+- Section, platform, delivery, heritage, buyer-fit, insight, and contact typography checked for hierarchy consistency
+- Version 11 responsive rules verified at the 390 px breakpoint with no horizontal overflow
 
 ## Pending
 

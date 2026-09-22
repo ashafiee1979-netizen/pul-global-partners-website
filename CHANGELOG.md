@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-09-22 Change Request 010
+
+- Normalized the Home and Solutions typography into one coordinated responsive scale.
+- Increased undersized descriptions, supporting copy, service summaries, and delivery text for easier executive scanning.
+- Moderated oversized section and page headings while preserving the approved typefaces and visual character.
+- Kept page structure, imagery, colors, content, and interactions unchanged.
+- Mirrored the final typography rules into the WordPress child-theme stylesheet.
+- Visually reviewed Home and Solutions at desktop width and verified responsive typography and overflow at 390 px.
+
 ## 2026-09-22 Change Request 009
 
 - Removed the institutional logo rail from beneath the Home hero and metrics.

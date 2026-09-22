@@ -126,3 +126,46 @@
 .heritage-logos>div:hover img{filter:none;opacity:1;transform:translateY(-2px)}
 @media(max-width:980px){.heritage-logos>div{height:108px;padding:20px}.heritage-logos img{max-width:165px}}
 @media(max-width:760px){.heritage-logos{grid-template-columns:1fr 1fr;margin:28px 0 26px}.heritage-logos>div{height:100px;padding:18px;border-right:1px solid #dce5ea;border-bottom:1px solid #dce5ea}.heritage-logos>div:nth-child(even){border-right:0}.heritage-logos>div:nth-child(n+3){border-bottom:0}.heritage-logos img,.heritage-logos>div:nth-child(n) img{max-height:52px;max-width:145px}}
+
+/* Version 11 unified typography scale */
+body{font-size:16px;line-height:1.7}
+h2{font-size:3.65rem;line-height:1.08}
+.hero h1{font-size:5.75rem;line-height:.94}
+.hero-lead{font-size:1.04rem;line-height:1.72}
+.page-hero h1{font-size:5.25rem;line-height:.96}
+.page-hero-grid>div:last-child>p{font-size:1.04rem;line-height:1.72}
+.intro h2{font-size:3.9rem}
+.intro-copy>.lead{font-size:1.12rem;line-height:1.72}
+.intro-copy p:not(.lead),.section-heading>p,.proof-header>p,.buyer-grid>div:first-child>p:last-child,.capability-panel p:not(.eyebrow),.contact-form-grid>div>p:not(.eyebrow){font-size:1rem;line-height:1.72}
+.section-kicker,.proof .eyebrow,.capability-panel .eyebrow,.insights .eyebrow,.contact .eyebrow{font-size:.82rem}
+.execution-proof span{font-size:.78rem;line-height:1.5}
+.execution-proof strong{font-size:.8rem}
+.platform-link>div>p{font-size:.74rem;line-height:1.45}
+.platform-link h3{font-size:1.58rem;line-height:1.22}
+.platform-link strong{font-size:.78rem}
+.experience-list span,.experience-list small{font-size:.78rem;line-height:1.55}
+.experience-list h3{font-size:1.36rem;line-height:1.3}
+.experience-list p{font-size:.92rem;line-height:1.62}
+.delivery-framework .gate-top span{font-size:.72rem}
+.delivery-framework h3{font-size:1.5rem}
+.delivery-framework p{font-size:.9rem;line-height:1.62}
+.delivery-framework strong{font-size:.75rem;line-height:1.45}
+.delivery-footer p{font-size:.94rem;line-height:1.6}
+.buyer-visuals h3{font-size:1.35rem;line-height:1.3}
+.buyer-visuals p{font-size:.9rem;line-height:1.58}
+.capability-panel h2{font-size:3.2rem}
+.insight-grid small{font-size:.72rem}
+.insight-grid h3{font-size:1.5rem;line-height:1.3}
+.insight-grid p{font-size:.92rem;line-height:1.62}
+.contact h2{font-size:3.7rem;line-height:1.08}
+.contact p{font-size:1rem;line-height:1.68}
+.engagement-list strong{font-size:.95rem}
+.engagement-list p{font-size:.92rem;line-height:1.62}
+.solution-title h2{font-size:3.45rem;line-height:1.08}
+.solution-title>p:last-child{font-size:1rem;line-height:1.7}
+.service-grid h3{font-size:1.3rem;line-height:1.3}
+.service-grid p{font-size:.94rem;line-height:1.62}
+.fit-grid h3{font-size:1.32rem;line-height:1.3}
+.fit-grid p{font-size:.94rem;line-height:1.62}
+@media(max-width:980px){h2{font-size:3.2rem}.hero h1{font-size:4.75rem}.page-hero h1{font-size:4.35rem}.intro h2{font-size:3.45rem}.solution-title h2{font-size:3.15rem}.contact h2{font-size:3.25rem}}
+@media(max-width:760px){body{font-size:16px}h2{font-size:2.65rem;line-height:1.1}.hero h1{font-size:3.45rem;line-height:.98}.hero-lead{font-size:1rem;line-height:1.68}.page-hero h1{font-size:3.15rem;line-height:1}.page-hero-grid>div:last-child>p{font-size:1rem}.intro h2{font-size:2.8rem}.intro-copy>.lead{font-size:1.06rem}.section-kicker,.proof .eyebrow,.capability-panel .eyebrow,.insights .eyebrow,.contact .eyebrow{font-size:.78rem}.platform-link h3{font-size:1.5rem}.experience-list h3{font-size:1.3rem}.experience-list p,.delivery-framework p,.buyer-visuals p,.insight-grid p,.engagement-list p,.service-grid p,.fit-grid p{font-size:.94rem}.buyer-visuals h3{font-size:1.24rem}.capability-panel h2,.contact h2{font-size:2.65rem}.solution-title h2{font-size:2.65rem}.service-grid h3{font-size:1.24rem}}

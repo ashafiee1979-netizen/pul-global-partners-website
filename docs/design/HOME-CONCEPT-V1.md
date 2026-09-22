@@ -1,12 +1,19 @@
-# Home Concept Version 10
+# Home Concept Version 11
 
-- Status: Review after Change Request 009
+- Status: Review after Change Request 010
 - Date: 2026-09-22
 - Preview: `prototype/index.html`
 
 ## Direction
 
 The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra Tech’s institutional organization and project storytelling. PUL’s navy, bright blue, white, and light-neutral palette remains the visual authority.
+
+## Version 11 refinements
+
+- Establishes one consistent responsive typography scale across Home and Solutions.
+- Raises body descriptions and supporting copy to a more readable executive-review size.
+- Reduces a small number of oversized headings to improve balance between sections.
+- Preserves the approved font families, copy, layout, imagery, color system, and page architecture.
 
 ## Version 10 refinements
 
