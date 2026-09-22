@@ -1,5 +1,12 @@
 # Change Log
 
+## 2026-09-22 Change Request 009
+
+- Removed the institutional logo rail from beneath the Home hero and metrics.
+- Relocated the five organization marks into Implementation Heritage.
+- Replaced cropped color assets with complete transparent white marks from the approved executive prototype.
+- Normalized optical size, spacing, alignment, and responsive behavior across the logo band.
+
 ## 2026-09-17 Change Request 008
 
 - Audited the separate PUL Global Executive Prototype at desktop width and identified its strongest trust, content, and operating-model patterns.

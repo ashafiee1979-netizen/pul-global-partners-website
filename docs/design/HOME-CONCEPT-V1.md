@@ -1,12 +1,19 @@
-# Home Concept Version 9
+# Home Concept Version 10
 
-- Status: Review after Change Request 008
-- Date: 2026-09-16
+- Status: Review after Change Request 009
+- Date: 2026-09-22
 - Preview: `prototype/index.html`
 
 ## Direction
 
 The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra Tech’s institutional organization and project storytelling. PUL’s navy, bright blue, white, and light-neutral palette remains the visual authority.
+
+## Version 10 refinements
+
+- Removes the institutional logo rail from beneath the Home hero and metrics.
+- Places the logo band directly within Implementation Heritage, where its context is accurate and clear.
+- Uses complete transparent white logo assets with individually tuned optical heights.
+- Maintains equal cells, restrained separators, and a responsive two-column mobile arrangement.
 
 ## Version 9 refinements
 
