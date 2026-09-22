@@ -72,8 +72,8 @@
 - Mobile menu interaction verified on the Strategy Call page; `aria-expanded` and open-state class update correctly
 - Solutions and Strategy Call pages pass mobile broken-image and horizontal-overflow checks
 - Version 10 confirms no institutional logo rail remains beneath the Home hero
-- Five complete white organization marks render inside Implementation Heritage
-- Heritage logo cells and optical sizes visually reviewed at desktop width
+- Twelve source organization marks render below the Implementation Heritage engagement table
+- Six-column, two-row heritage logo grid and optical sizes visually reviewed at desktop width
 
 ## Pending
 

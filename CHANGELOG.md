@@ -3,9 +3,9 @@
 ## 2026-09-22 Change Request 009
 
 - Removed the institutional logo rail from beneath the Home hero and metrics.
-- Relocated the five organization marks into Implementation Heritage.
-- Replaced cropped color assets with complete transparent white marks from the approved executive prototype.
-- Normalized optical size, spacing, alignment, and responsive behavior across the logo band.
+- Relocated the organization marks into Implementation Heritage below the engagement table.
+- Replaced the five-logo set with all 12 original institutional logo files from the referenced PUL Consulting prototype at `localhost:3001`.
+- Normalized optical size, spacing, alignment, and responsive behavior across a two-row executive grid.
 
 ## 2026-09-17 Change Request 008
 

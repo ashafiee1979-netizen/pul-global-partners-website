@@ -11,9 +11,9 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 ## Version 10 refinements
 
 - Removes the institutional logo rail from beneath the Home hero and metrics.
-- Places the logo band directly within Implementation Heritage, where its context is accurate and clear.
-- Uses complete transparent white logo assets with individually tuned optical heights.
-- Maintains equal cells, restrained separators, and a responsive two-column mobile arrangement.
+- Places the logo band below the engagement table within Implementation Heritage, where its context is accurate and clear.
+- Uses the complete 12-logo institutional set from the referenced PUL Consulting prototype.
+- Maintains equal cells, individually tuned optical heights, restrained separators, and responsive six-, three-, and two-column arrangements.
 
 ## Version 9 refinements
 
