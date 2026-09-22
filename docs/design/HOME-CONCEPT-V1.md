@@ -12,8 +12,8 @@ The concept combines QuantuTech’s hierarchy and conversion clarity with Tetra 
 
 - Removes the institutional logo rail from beneath the Home hero and metrics.
 - Places the logo band below the engagement table within Implementation Heritage, where its context is accurate and clear.
-- Uses the complete 12-logo institutional set from the referenced PUL Consulting prototype.
-- Maintains equal cells, individually tuned optical heights, restrained separators, and responsive six-, three-, and two-column arrangements.
+- Uses the requested USAID, The World Bank, GIZ, and Creative Associates source logos.
+- Maintains equal cells, individually tuned optical heights, restrained separators, and a responsive four-column to two-column arrangement.
 
 ## Version 9 refinements
 

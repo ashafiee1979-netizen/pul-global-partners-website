@@ -45,7 +45,7 @@
 - Platform, delivery, buyer-fit, heritage-logo, Insights, section-label, and conversion treatments rebuilt for executive review.
 - Change Request 007 implemented: platform imagery differentiated and two sections selectively restored to Version 6.
 - Change Request 008 implemented: external executive prototype benchmarked and the Home, Solutions, and Strategy Call experience elevated as one coordinated Version 9 system.
-- Change Request 009 revised: the complete 12-logo set from the PUL Consulting prototype now appears below the engagement table in Implementation Heritage.
+- Change Request 009 finalized: USAID, The World Bank, GIZ, and Creative Associates appear as a balanced four-logo row below the Implementation Heritage table.
 
 ## Current decisions
 

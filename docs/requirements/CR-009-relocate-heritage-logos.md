@@ -11,14 +11,15 @@ Remove the organization logos from beneath the Home image, use the logo files fr
 ## Implementation
 
 - Removed the post-metrics institutional trust section.
-- Retrieved all 12 institutional logo files directly from the referenced prototype at `http://localhost:3001`.
-- Added a six-column, two-row logo grid after the Implementation Heritage engagement list.
+- Retrieved the institutional logo source files directly from the referenced prototype at `http://localhost:3001`.
+- Limited the visible set to USAID, The World Bank, GIZ, and Creative Associates.
+- Added a four-column logo row after the Implementation Heritage engagement list.
 - Tuned selected logo maximum heights for consistent optical weight without distorting native proportions.
-- Added responsive three-column tablet and two-column mobile arrangements.
+- Added a responsive two-column mobile arrangement.
 
 ## Acceptance evidence
 
-- Desktop visual review confirms 12 centered marks in two aligned rows beneath the table.
-- Home document contains one 12-logo heritage grid and no post-hero logo rail.
+- Desktop visual review confirms four centered marks in one aligned row beneath the table.
+- Home document contains one four-logo heritage grid and no post-hero logo rail.
 - WordPress-ready CSS and logo assets are synchronized.
 - Production website was not modified.

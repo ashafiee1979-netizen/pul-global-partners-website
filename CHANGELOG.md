@@ -6,6 +6,7 @@
 - Relocated the organization marks into Implementation Heritage below the engagement table.
 - Replaced the five-logo set with all 12 original institutional logo files from the referenced PUL Consulting prototype at `localhost:3001`.
 - Normalized optical size, spacing, alignment, and responsive behavior across a two-row executive grid.
+- Finalized the visible set to USAID, The World Bank, GIZ, and Creative Associates and rebalanced the section as one four-column row.
 
 ## 2026-09-17 Change Request 008
 

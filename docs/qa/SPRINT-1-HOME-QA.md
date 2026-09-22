@@ -72,8 +72,8 @@
 - Mobile menu interaction verified on the Strategy Call page; `aria-expanded` and open-state class update correctly
 - Solutions and Strategy Call pages pass mobile broken-image and horizontal-overflow checks
 - Version 10 confirms no institutional logo rail remains beneath the Home hero
-- Twelve source organization marks render below the Implementation Heritage engagement table
-- Six-column, two-row heritage logo grid and optical sizes visually reviewed at desktop width
+- Four requested organization marks render below the Implementation Heritage engagement table
+- USAID, The World Bank, GIZ, and Creative Associates optical sizes visually reviewed in a single desktop row
 
 ## Pending
 
