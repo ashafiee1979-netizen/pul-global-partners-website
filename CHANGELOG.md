@@ -1,5 +1,11 @@
 # Change Log
 
+## 2026-09-25 Vercel Preview Deployment
+
+- Pushed the completed responsive page system to the GitHub `main` branch.
+- Verified the Vercel production deployment and all eight public page routes plus the Capability Statement PDF.
+- The `pulglobal.com` WordPress site remains unchanged; this deployment is the separate Vercel prototype.
+
 ## 2026-09-25 Change Request 011
 
 - Added complete standalone About, Projects, Insights, Contact, and Capability Statement pages.

@@ -5,7 +5,7 @@
 - Phase: Sprint 1 page-system prototype and responsive QA
 - Plan version: 1.0 approved
 - Implementation authorization: Granted by user on 2026-09-16
-- Production changes: None
+- Live WordPress site: unchanged; Vercel review prototype is deployed at https://pul-global-partners-website.vercel.app/ (page build commit 3733ec0).
 - Active blockers: None for local prototype completion; production integrations remain pending selection of form and scheduling providers
 
 ## Completed
@@ -70,4 +70,4 @@
 ## Last session
 
 - Date: 2026-09-25
-- Result: Change Request 011 page system implemented and passed 56 responsive route/viewport checks; interaction, link, image, and form QA recorded.
+- Result: Change Request 011 passed 56 responsive route/viewport checks, was pushed to GitHub, and deployed to Vercel; all eight public routes and the Capability Statement PDF returned HTTP 200.

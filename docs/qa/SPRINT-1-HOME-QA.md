@@ -106,7 +106,8 @@
 - Shared prototype and WordPress child-theme CSS/JavaScript copies compared for parity.
 - Capability Statement PDF served locally; all listed page/asset links and anchor targets passed.
 - Final cache-busted build reran the 56 responsive checks after below-the-fold Home/Solutions image loading was deferred; no page overflow or broken images.
+- GitHub `main` push and Vercel production deployment verified; all eight deployed routes and the Capability Statement PDF returned HTTP 200.
 
 ## Environment note
 
-PHP CLI was not installed in the current command environment, so PHP syntax validation is pending. No production deployment was attempted.
+PHP CLI was not installed in the current command environment, so PHP syntax validation is pending. The Vercel prototype is deployed; WordPress production template integration remains pending.
