@@ -1,13 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
   if (window.lucide) window.lucide.createIcons();
-  document.querySelectorAll('[data-prototype-form]').forEach(form => {
+  document.querySelectorAll('[data-mailto-form]').forEach(form => {
     form.addEventListener('submit', event => {
       event.preventDefault();
       const status = form.querySelector('.form-status');
-      if (status) status.textContent = 'Thank you. Our team will review your request and respond within two business days.';
-      form.reset();
+      if (!form.reportValidity()) return;
+      const subject = form.dataset.subject || 'PUL Global Partners inquiry';
+      const lines = [...new FormData(form)].map(([name, value]) => {
+        const field = form.elements.namedItem(name);
+        const label = field?.labels?.[0]?.childNodes?.[0]?.textContent?.trim() || name;
+        return `${label}: ${value}`;
+      });
+      const mailto = `mailto:info@pulglobal.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+      if (status) status.textContent = 'Opening an email draft. If your email app does not open, write to info@pulglobal.com.';
+      window.location.href = mailto;
     });
   });
+  const dateInput = document.querySelector('input[type="date"]');
+  if (dateInput) {
+    const localToday = new Date();
+    localToday.setMinutes(localToday.getMinutes() - localToday.getTimezoneOffset());
+    dateInput.min = localToday.toISOString().slice(0, 10);
+  }
   const counters = document.querySelectorAll('[data-counter]');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const animateCounter = counter => {
@@ -40,13 +54,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
   if (!toggle || !nav) return;
-  const close = () => { toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); document.body.classList.remove('menu-open'); };
+  const close = () => {
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation');
+    toggle.setAttribute('title', 'Open navigation');
+    nav.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
+  };
   toggle.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!open));
+    toggle.setAttribute('aria-label', open ? 'Open navigation' : 'Close navigation');
+    toggle.setAttribute('title', open ? 'Open navigation' : 'Close navigation');
     nav.classList.toggle('is-open', !open);
     document.body.classList.toggle('menu-open', !open);
   });
   nav.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
-  window.addEventListener('resize', () => { if (window.innerWidth > 760) close(); });
+  window.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      close();
+      toggle.focus();
+    }
+  });
+  window.addEventListener('resize', () => { if (window.innerWidth > 1100) close(); });
 });

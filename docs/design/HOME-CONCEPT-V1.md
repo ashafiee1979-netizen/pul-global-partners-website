@@ -1,8 +1,16 @@
-# Home Concept Version 11
+# Home Concept Version 12
 
-- Status: Review after Change Request 010
-- Date: 2026-09-22
+- Status: Home visual baseline retained while the complete page system is reviewed
+- Date: 2026-09-25
 - Preview: `prototype/index.html`
+
+## Version 12 refinements
+
+- Extends the approved Home visual language across About, Projects, Insights, Contact, Capability Statement, Solutions, and Strategy Call pages.
+- Links the Home experience and procurement calls to action to their dedicated pages.
+- Preserves the four approved Implementation Heritage logos and makes the 2010 institutional heritage figure static rather than animating through inaccurate years.
+- Reserves intrinsic image dimensions and closes a 360 px metric-grid overflow found during device testing.
+- Leaves the Home information architecture intact; changes are limited to navigation destinations, image layout stability, and responsive polish.
 
 ## Direction
 

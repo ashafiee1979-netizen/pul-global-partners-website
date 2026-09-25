@@ -1,5 +1,19 @@
 # Change Log
 
+## 2026-09-25 Change Request 011
+
+- Added complete standalone About, Projects, Insights, Contact, and Capability Statement pages.
+- Enriched Solutions with a visual overview of all four distinct service platforms.
+- Updated shared navigation, footer paths, and Home calls to action across the page system.
+- Added the approved 2026 Capability Statement PDF, an accessible download path, embedded preview, and aligned NAICS table.
+- Corrected inquiry and scheduling forms to transparently prepare an email draft without implying transmission or calendar booking.
+- Added responsive page-system styles and synchronized shared CSS/JavaScript to the WordPress child-theme scaffold.
+- Completed 56 route/viewport responsive checks; fixed the discovered 360 px metric overflow and added intrinsic image dimensions to prevent layout shift.
+- Deferred below-the-fold Home and Solutions image decoding/loading while retaining the hero’s high fetch priority.
+- Improved the mobile menu’s accessible open/close name and Escape behavior with focus return.
+- Historic project references include attribution context and do not imply current direct awards or endorsements.
+- Cross-device QA, accessibility checks, and deployment verification are tracked in the Sprint 1 QA record.
+
 ## 2026-09-22 Change Request 010
 
 - Normalized the Home and Solutions typography into one coordinated responsive scale.

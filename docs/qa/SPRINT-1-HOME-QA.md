@@ -6,6 +6,13 @@
 
 ## Passed
 
+- Change Request 011 route suite: Home, Solutions, About, Projects, Insights, Contact, Capability Statement, and Strategy Call pages return local HTTP 200
+- All seven standalone pages share the PUL brand header, active navigation, responsive menu, footer, and capability-statement route
+- Home experience and capability actions resolve to the Projects and Capability Statement pages
+- Inquiry and scheduling forms expose required-field validation and honest email-draft behavior; no false success submission is displayed
+- Official Capability Statement PDF resolves locally and remains available as both download and inline preview
+- WordPress child-theme CSS and JavaScript mirrors match the prototype shared files
+
 - Desktop first viewport visually reviewed
 - Desktop full page visually reviewed
 - Mobile first viewport reviewed at 390 by 844
@@ -81,13 +88,24 @@
 
 ## Pending
 
-- Tablet breakpoint review
-- Full keyboard traversal test
-- Automated accessibility scan
-- Lighthouse performance run
+- Automated accessibility scan and Lighthouse performance run
 - Firefox and Safari review
 - Production WordPress template integration
-- Full Solutions-page desktop and mobile visual review
+- Production form-processing and scheduling integrations
+
+## Change Request 011 QA (2026-09-25)
+
+- All eight routes returned HTTP 200 locally: Home, Solutions, About, Projects, Insights, Contact, Capability Statement, and Strategy Call.
+- Browser layout matrix passed at 1920x1080, 1440x900, 1366x768, 1024x768, 768x1024, 390x844, and 360x800 across all eight routes (56 combinations).
+- No page-level horizontal overflow and no broken images in the matrix; the NAICS data table scrolls inside its own mobile frame.
+- Browser screenshots reviewed for the Home mobile layout and desktop first viewports of all supporting pages; Capability Statement reviewed on desktop and phone.
+- Local-reference audit found zero missing files, anchor targets, image alt text, intrinsic image dimensions, or page titles.
+- Mobile navigation open/close state and accessible name verified; Escape closes the menu and returns focus to its toggle.
+- Empty Contact and Strategy Call forms were blocked by native required-field validation; no email draft or external submission was triggered.
+- Strategy Call date input minimum verified as the local current date; email-draft messaging correctly says it does not reserve a calendar slot.
+- Shared prototype and WordPress child-theme CSS/JavaScript copies compared for parity.
+- Capability Statement PDF served locally; all listed page/asset links and anchor targets passed.
+- Final cache-busted build reran the 56 responsive checks after below-the-fold Home/Solutions image loading was deferred; no page overflow or broken images.
 
 ## Environment note
 
