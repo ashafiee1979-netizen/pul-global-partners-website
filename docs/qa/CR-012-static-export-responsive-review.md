@@ -1,7 +1,7 @@
 # Change Request 012: Static Export and Responsive Review
 
 Date: 2026-09-30
-Result: Passed for review build; production release not authorized
+Result: Passed for local and Vercel review release; `pulglobal.com` production remains unchanged
 
 ## Build Checks
 
@@ -16,6 +16,15 @@ HTTP 200 verified for `/`, `/solutions/`, `/about/`, `/projects/`, `/insights/`,
 
 The approved Capability Statement PDF is included in the static export at `/assets/documents/PUL-Global-Partners-Capability-Statement-2026.pdf` and is linked from the Capability page.
 
+## Vercel Review Deployment
+
+- GitHub `main` commit `2df039e` deployed to the existing `pul-global-partners-website` Vercel project.
+- Vercel Root Directory is `next-app`; Framework Preset is Next.js.
+- Stable review URL: https://pul-global-partners-website.vercel.app/.
+- All 11 public page/article routes and the Capability Statement PDF returned HTTP 200 after redeployment.
+- Initial deployment generated successfully but served 404 for app routes because the Vercel Framework Preset was `Other`. Set it to Next.js and redeployed; routes then passed.
+- Home page visually checked on the stable review URL.
+
 ## Responsive and Browser Checks
 
 - Viewports checked: 1440, 1024, 768, and 390 px.
@@ -27,4 +36,4 @@ The approved Capability Statement PDF is included in the static export at `/asse
 
 ## Release Boundary
 
-This is a local review build only. No GitHub push, Vercel deployment, or WordPress change was made. Accessibility/performance observations are visual and functional smoke checks, not a formal third-party audit or production acceptance test. Hosting compatibility, external integrations, final content approval, and release authorization remain outstanding.
+This deployment is a Vercel review site on its `vercel.app` domain. It is not connected to `pulglobal.com`; the live WordPress website and DNS were not changed. Accessibility/performance observations are visual and functional smoke checks, not a formal third-party audit or production acceptance test. External form/scheduling integrations and any future custom-domain migration require separate review and authorization.

@@ -2,7 +2,7 @@
 
 ## State
 
-- Phase: Authorized GitHub and Vercel review deployment in progress
+- Phase: Vercel review deployment complete; awaiting user review
 - Plan version: 1.1 architecture amendment approved
 - Implementation authorization: Granted by user on 2026-09-16
 - Live WordPress site: unchanged. Existing Vercel review prototype remains at https://pul-global-partners-website.vercel.app/ and is not being modified by this work.
@@ -58,6 +58,10 @@
 - Responsive browser QA passed at 1440, 1024, 768, and 390 px: no horizontal overflow, missing page hero imagery, broken images, or browser-console errors; mobile navigation exercised.
 - Dependency audit reported zero known vulnerabilities at the time of implementation.
 - User authorized pushing the reviewed Next.js build to GitHub `main` and deploying to the existing Vercel review project on 2026-09-30; project root directory has been set to `next-app`.
+- Build configuration corrected to the Next.js framework preset after initial route smoke checks exposed 404s; redeployment with the corrected preset is Ready and serving the site.
+- GitHub `main` is current at commit `2df039e`; working tree is clean.
+- Stable review URL `https://pul-global-partners-website.vercel.app/` and all 11 page/article routes plus the Capability Statement PDF return HTTP 200.
+- Live Home page visually checked after deployment. `pulglobal.com`, WordPress, and DNS remain unchanged.
 
 ## Current decisions
 
@@ -70,9 +74,9 @@
 
 ## Next session starts here
 
-1. Verify the new Vercel deployment, its public review URL, and core page/PDF routes after the GitHub push.
+1. User reviews the deployed pages and sends requested refinements; register material revisions as change requests.
 2. Keep `pulglobal.com`, WordPress, and DNS unchanged; no custom domain has been assigned to the redesign.
-3. Collect post-deployment feedback as change requests; confirm actual form and calendar integration requirements with IT before implementing them.
+3. Confirm actual form and calendar integration requirements with IT before implementing them; static email-draft interactions are the current behavior.
 
 ## Last session
 

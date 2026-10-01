@@ -3,8 +3,10 @@
 ## 2026-09-30 Authorized Vercel Review Deployment
 
 - User authorized pushing the reviewed Next.js build to GitHub `main` and deploying it to the existing `pul-global-partners-website` Vercel review project.
-- Set that Vercel project's Root Directory to `next-app`; the previous deployment remains active until the new build succeeds.
-- The authorization excludes the live WordPress installation, `pulglobal.com`, and DNS. Deployment outcome and final URL will be recorded after verification.
+- Set the Vercel project's Root Directory to `next-app` and Framework Preset to Next.js; corrected the preset after initial deployed page requests returned 404.
+- Commit `2df039e` deployed successfully. Stable review URL: https://pul-global-partners-website.vercel.app/.
+- All 11 page/article routes and the Capability Statement PDF returned HTTP 200 after redeployment; the deployed Home page was visually checked.
+- The live WordPress installation, `pulglobal.com`, and DNS remain unchanged.
 
 ## 2026-09-30 Next.js Review Build Complete
 
