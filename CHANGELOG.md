@@ -1,5 +1,27 @@
 # Change Log
 
+## 2026-09-30 Authorized Vercel Review Deployment
+
+- User authorized pushing the reviewed Next.js build to GitHub `main` and deploying it to the existing `pul-global-partners-website` Vercel review project.
+- Set that Vercel project's Root Directory to `next-app`; the previous deployment remains active until the new build succeeds.
+- The authorization excludes the live WordPress installation, `pulglobal.com`, and DNS. Deployment outcome and final URL will be recorded after verification.
+
+## 2026-09-30 Next.js Review Build Complete
+
+- Implemented the separate Next.js App Router + TypeScript site with static export and three MDX Insights articles.
+- Delivered Home, Solutions, About, Projects, Insights, Contact, Strategy Call, and Capability Statement pages using the approved design baseline and governed assets.
+- Passed typecheck, optimized static build, 11-route HTTP smoke test, capability PDF check, and responsive browser QA at 1440, 1024, 768, and 390 px.
+- No horizontal overflow, broken images, or browser-console errors were observed in the tested viewports; mobile navigation was exercised.
+- Kept GitHub, existing Vercel deployment, and the live WordPress site unchanged. Awaiting user review before revisions or release planning.
+
+## 2026-09-30 Change Request 012 Architecture Approval
+
+- Replaced WordPress as the active new-build recommendation with an isolated Next.js App Router and TypeScript application.
+- Approved locally authored MDX as the initial workflow for occasional Insights articles; no database or CMS at outset.
+- Preserved the current WordPress website, deployed Vercel review build, static prototype, and production configuration unchanged.
+- Added ADR-003 and CR-012, updated the product backlog, and began Plan version 1.1 amendment before implementation.
+- GitHub push and deployment remain unapproved and out of scope for this change.
+
 ## 2026-09-25 Vercel Preview Deployment
 
 - Pushed the completed responsive page system to the GitHub `main` branch.

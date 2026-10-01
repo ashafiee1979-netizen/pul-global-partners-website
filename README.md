@@ -4,7 +4,7 @@ This repository governs the local design, content, development, quality assuranc
 
 ## Technology decision
 
-The planned production platform is WordPress using a lightweight Blocksy child theme, governed Elementor templates, PHP, semantic HTML, modern CSS, and minimal vanilla JavaScript. The current public page framework will be preserved and enriched.
+The approved direction is a statically exported Next.js App Router site using TypeScript and locally authored MDX for Insights. The current page framework and approved design are preserved and enriched. No database or hosted CMS is included. The user has authorized pushing the reviewed build to GitHub `main` and deploying it to the existing Vercel review project; this does not authorize changing the live WordPress site or the `pulglobal.com` domain. See `docs/decisions/ADR-003-nextjs-content-architecture.md` and Change Request 012.
 
 ## Operating rules
 
@@ -25,6 +25,8 @@ The planned production platform is WordPress using a lightweight Blocksy child t
 - `docs/deployment/` deployment and rollback records
 - `backlog/` prioritized work and sprint records
 - `assets/ai-register/` AI asset governance records
-- `wordpress/` future approved implementation
+- `next-app/` separate Next.js review build
+- `prototype/` preserved visual/content reference and previously deployed baseline
+- `wordpress/` historical implementation scaffold; not the selected new build target
 
 Read `STATUS.md` before doing any work.

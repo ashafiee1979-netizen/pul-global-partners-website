@@ -18,6 +18,9 @@ vendor/
 .cache/
 tmp/
 *.log
+next-app/.next/
+next-app/out/
+next-app/tsconfig.tsbuildinfo
 
 # QA renders are not source artifacts
 qa-renders/
