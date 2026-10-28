@@ -2,10 +2,16 @@
 
 ## State
 
-- Phase: Vercel review deployment complete; awaiting user review
+- Phase: Company Profile alignment, Who We Are and Insights refinement, and Partner With Us page implemented locally; awaiting user review
 - Plan version: 1.1 architecture amendment approved
 - Implementation authorization: Granted by user on 2026-09-16
-- Live WordPress site: unchanged. Existing Vercel review prototype remains at https://pul-global-partners-website.vercel.app/ and is not being modified by this work.
+- Live WordPress site: unchanged. Existing Vercel review prototype remains at https://pul-global-partners-website.vercel.app/ and is not being modified by this work. Latest local Home preview: http://localhost:4175/.
+- Latest refinement (2026-10-28): reorganized the partnership conversation area into a two-column layout, with heading/copy/contact details at left and the form aligned at top-right; mobile stacks naturally. Typecheck, optimized build (14 routes), local Partner With Us HTTP check (200), and `git diff --check` passed. No push or deployment performed.
+- Previous refinement (2026-10-28): added coordinated, varied color tints and matching accents to Solutions platform, service, economic-growth, and delivery cards while preserving contrast and reduced-motion behavior. Typecheck, optimized build (14 routes), local Solutions HTTP check (200), and `git diff --check` passed. No push or deployment performed.
+- Previous refinement (2026-10-28): strengthened the blue accent on the five requested Home section-title phrases; other title and brand colors remain unchanged. Typecheck, optimized build (14 routes), local Home HTTP check (200), and `git diff --check` passed. No push or deployment performed.
+- Previous refinement (2026-10-28): balanced the Home “Who we are” intro by placing its three existing proof points beneath the headline in the open desktop column; narrative and CTAs remain grouped on the right, with a single-column reading order on tablet/mobile. Typecheck and optimized build (14 routes) passed. No push or deployment performed.
+- Previous refinement (2026-10-28): redesigned “Where PUL Fits” as image-free audience and engagement pathways; removed the Home “Procurement Ready” panel while retaining the footer Capability Statement link. The section was reviewed at desktop and phone widths. Typecheck, optimized build (14 routes), local Home HTTP check (200), and `git diff --check` passed. No push or deployment performed.
+- Latest Home refinement (2026-10-26): photo-heavy service cards replaced with a responsive text-first six-platform directory; each link routes to its Solutions detail anchor. TypeScript, optimized build, desktop browser review, link/anchor accessibility check, and `git diff --check` passed. No deployment performed.
 - Active blockers: None for local prototype completion; production integrations remain pending selection of form and scheduling providers
 
 ## Completed
@@ -62,6 +68,19 @@
 - GitHub `main` is current at commit `2df039e`; working tree is clean.
 - Stable review URL `https://pul-global-partners-website.vercel.app/` and all 11 page/article routes plus the Capability Statement PDF return HTTP 200.
 - Live Home page visually checked after deployment. `pulglobal.com`, WordPress, and DNS remain unchanged.
+- Company Profile alignment completed locally on 2026-10-25: expanded the site from four to six platforms, added Economic Growth & SME Support, aligned About Us experience language, created a dedicated Partnerships page, updated navigation and capability overview, and preserved the approved Home hero. The official Capability Statement PDF remains unchanged pending an updated statement.
+- Follow-up completed 2026-10-25: consolidated About and Partnerships into one About & Partnerships page, added two optimized visuals from the Company Profile, retained the prior `/partnerships/` URL as a redirect to the partnership section, and confirmed first-screen imagery across all public pages and Insight articles.
+- Solutions refinement completed 2026-10-25: rebuilt the Solutions hero as a large, responsive image-led feature using a Company Profile visual; aligned platform overview and service sections to Home typography, spacing, and card treatment; added the Company Profile SME program-cycle infographic.
+- Who We Are restructure completed 2026-10-25: renamed About & Partnerships in navigation and metadata, added a large Home/Solutions-style profile-image hero, organized the page as foundation → experience → selected projects → Partner With Us, moved the full seven-project portfolio into its own section, and retained `/projects/` and `/partnerships/` redirects to the relevant anchors.
+- Follow-up completed 2026-10-25: removed Who We Are's secondary photo, named assignments, client references, and logos; replaced project-specific details with parent-company-attributed experience domains. Stabilized shared header positioning by keeping shell-width overrides within main content and reserving scrollbar space. Rebuilt Insights as an image-led editorial hub with defined themes, one featured perspective, and related articles.
+- Partner With Us page completed 2026-10-25: repurposed the Contact destination as a partnership landing page with qualified-company and professional partner pathways, opportunity collaboration model, contact form, and direct contact details. Moved detailed partnership positioning off Who We Are, updated navigation and CTAs, and redirected the legacy `/partnerships/` route to the new page. The form prepares an email draft; it does not directly submit to a backend.
+- Shared navigation and page-title refinement completed 2026-10-25: standardized primary-tab sizing, spacing, active-page indicator, and responsive menu behavior across desktop/tablet/mobile; aligned interior hero title sizes across Who We Are, Solutions, Partner With Us, and Insights.
+- Strategy Call CTA refinement completed 2026-10-25: improved the header action label, proportions, icon alignment, and current-page state; added a matching prominent call link inside tablet/mobile navigation so the request path stays available at every viewport.
+- Strategy Call page simplification completed 2026-10-25: removed the blue image hero and the added responsive-menu call link; the page now starts directly with a semantic “What to expect” heading, timing/details, and the email-draft inquiry form.
+- Navigation jump fixed 2026-10-25: removed the Home-only primary-tab font-size override that widened the navigation group and shifted its left edge relative to interior pages; all routes now inherit the same shared tab sizing.
+- Insights page removed 2026-10-25: removed Insights from primary and footer navigation and removed the Home Perspectives/article-card section. Legacy Insights and article routes now redirect to Home; MDX article source is retained but unpublished for possible future use.
+- Home QA passed at 375, 390, 768, 900, 1024, and 1440 px with no horizontal overflow; mobile navigation was opened and checked; Home images loaded; no browser console errors. TypeScript and optimized build passed (13 prerendered routes).
+- No GitHub push, Vercel deployment, or production change was made for this refinement.
 
 ## Current decisions
 
@@ -74,11 +93,15 @@
 
 ## Next session starts here
 
-1. User reviews the deployed pages and sends requested refinements; register material revisions as change requests.
-2. Keep `pulglobal.com`, WordPress, and DNS unchanged; no custom domain has been assigned to the redesign.
-3. Confirm actual form and calendar integration requirements with IT before implementing them; static email-draft interactions are the current behavior.
+1. Review Partner With Us at http://localhost:4175/contact/ alongside Home at http://localhost:4175/, Solutions at http://localhost:4175/solutions/, and Who We Are at http://localhost:4175/about/; capture any remaining visual or content changes as focused requests.
+2. Keep `pulglobal.com`, WordPress, and DNS unchanged; the local redesign has not been pushed or deployed in this session.
+3. Confirm calendar-booking and form-submission provider requirements with IT before integrating them; the current inquiry flow opens an email draft and makes no booking.
 
 ## Last session
 
-- Date: 2026-09-30
-- Result: User approved the Next.js/TypeScript + MDX architecture for an isolated review build. No GitHub push or deployment authorized.
+- Date: 2026-10-28
+- Result: Refined Partner With Us card colors, added a numbered collaboration process, and tightened the partnership inquiry section and form spacing while preserving email-draft behavior. Typecheck, optimized build (14 routes), local HTTP 200, and `git diff --check` passed. No push or deployment performed.
+- Previous pass unified the Solutions, Who We Are, and Partner With Us heroes into a consistent 620 px desktop split layout, 45% text panel, 55% image panel, no copy/image overlap, matched title scale, and stacked image below text at phone/portrait-tablet widths. Browser measurements at 1536 px confirmed equal boundaries and heights; all three heroes visually inspected.
+- Prior pass fixed cross-page section rhythm using shared desktop/tablet/mobile spacing tokens and removed the oversized Solutions-to-capability transition. TypeScript/build passed (14 generated routes), nine routes returned HTTP 200, and desktop widths had no horizontal overflow. No new mobile screenshot was claimed.
+- Previous executive refinement remains in place: clearer Home buyer proposition, accurate call-request language, metric attribution, and corrected phone/narrow-tablet Partner With Us layouts.
+- Updated Home, Solutions, Who We Are, Insights, Capability overview, metadata, navigation, and footer; removed parent-company-specific project references from Who We Are and retained a clear attribution statement. Preserved the approved Home hero and official Capability Statement PDF.

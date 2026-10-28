@@ -3,11 +3,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { CalendarDays, FileDown, Menu, X } from 'lucide-react';
+import { MessageSquareText, FileDown, Menu, X } from 'lucide-react';
 
 const links = [
-  ['Home', '/'], ['Solutions', '/solutions/'], ['About Us', '/about/'],
-  ['Projects', '/projects/'], ['Insights', '/insights/'], ['Contact', '/contact/'],
+  ['Home', '/'], ['Solutions', '/solutions/'], ['Who We Are', '/about/'],
+  ['Partner With Us', '/contact/'],
 ] as const;
 
 export function SiteNav({ current }: { current?: string }) {
@@ -26,7 +26,7 @@ export function SiteNav({ current }: { current?: string }) {
           {links.map(([label, href]) => <Link key={href} href={href} aria-current={current === label ? 'page' : undefined} onClick={() => setOpen(false)}>{label}</Link>)}
         </nav>
         <div className="nav-actions">
-          <Link className="button button-small nav-call" href="/schedule/"><CalendarDays aria-hidden="true" />Schedule Call</Link>
+          <Link className="button button-small nav-call" href="/schedule/" aria-current={current === 'Schedule' ? 'page' : undefined}><MessageSquareText aria-hidden="true" />Request a Call</Link>
           <Link className="button button-small button-outline nav-action" href="/capability/"><FileDown aria-hidden="true" />Capability Statement</Link>
         </div>
       </div>

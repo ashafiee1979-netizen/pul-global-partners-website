@@ -3,8 +3,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.pulglobal.com'),
-  title: { default: 'PUL Global Partners | Strategy. Solutions. Execution.', template: '%s | PUL Global Partners' },
-  description: 'A U.S.-registered implementation partner integrating management consulting, capacity building, technology, procurement, logistics, and mission support.',
+  title: { default: 'PUL Global Partners | U.S. Contracting & International Delivery', template: '%s | PUL Global Partners' },
+  description: 'A U.S.-registered partner for federal contracting, management consulting, procurement and contract management, technology, global trade, international mission support, and capacity building.',
   icons: { icon: '/assets/images/pul-global-partners-horizontal.png' },
   openGraph: { type: 'website', siteName: 'PUL Global Partners', images: ['/assets/images/pul-global-strategy-hero-v1.webp'] },
 };

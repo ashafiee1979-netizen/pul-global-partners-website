@@ -7,11 +7,12 @@ export function Counter({ end, start = 1, suffix = '', fixed = false, label }: {
   useEffect(() => {
     if (fixed || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     let frame = 0;
-    const duration = 4200;
+    const duration = 1800;
     const began = performance.now();
     const animate = (now: number) => {
       const progress = Math.min((now - began) / duration, 1);
-      setValue(Math.round(start + (end - start) * progress));
+      const eased = 1 - (1 - progress) ** 3;
+      setValue(Math.round(start + (end - start) * eased));
       if (progress < 1) frame = requestAnimationFrame(animate);
     };
     frame = requestAnimationFrame(animate);
