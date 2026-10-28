@@ -114,6 +114,12 @@
   line-height: 1.65;
 }
 
+@media (min-width: 1101px) {
+  .home :global(.metrics-disclosure) {
+    white-space: nowrap;
+  }
+}
+
 .home :global(.intro) {
   padding-block: 72px;
 }
