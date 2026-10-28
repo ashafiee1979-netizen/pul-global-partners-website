@@ -822,6 +822,10 @@
   color: #183647;
 }
 
+.experience :global(.proof-header .eyebrow.light) {
+  color: #17698b;
+}
+
 .experience :global(.proof-header > p) {
   color: #536a76;
 }
