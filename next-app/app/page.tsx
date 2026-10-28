@@ -50,7 +50,7 @@ export default function HomePage() {
       <div><Counter end={1000} start={10} suffix="+" label="1,000 or more staff managed" /><span>Staff managed</span></div>
       <div><Counter end={10000} start={1} suffix="+" label="10,000 or more people trained" /><span>People trained</span></div>
       <div><Counter end={2010} start={2010} fixed label="Institutional heritage since 2010" /><span>Institutional heritage</span></div>
-    </div><p className="shell metrics-disclosure">These indicators reflect selected work across PUL’s institutional history and management team; they are not a claim that every assignment was awarded to PUL Global Partners LLC.</p></section>
+    </div><p className="shell metrics-disclosure">Our leadership brings a record of relevant work across PUL’s institutional history, informing the experience and capabilities we bring to each engagement.</p></section>
 
     <section className="section intro" id="about"><div className={`shell split-intro ${styles.introGrid}`}>
       <div className={styles.introHeading}><p className="eyebrow section-kicker">Who we are</p><h2>U.S. accountability.<br /><span>Field-tested execution.</span></h2></div>
