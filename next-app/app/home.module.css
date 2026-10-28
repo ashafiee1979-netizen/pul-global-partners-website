@@ -110,8 +110,8 @@
   margin: 0 auto;
   padding: 0 0 18px;
   color: #c4d6e0;
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .home :global(.intro) {
@@ -536,6 +536,12 @@
 @media (max-width: 760px) {
   .home :global(main .shell) {
     width: calc(100% - 40px);
+  }
+
+  .home :global(.metrics-disclosure) {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: 16px;
   }
 
   .home :global(.hero) {
