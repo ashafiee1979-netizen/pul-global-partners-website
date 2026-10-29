@@ -798,3 +798,9 @@
 @media (prefers-reduced-motion: reduce) {
   .partnerGrid article { transition: none; }
 }
+
+@media (max-width: 850px) {
+  .contactGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
