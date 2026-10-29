@@ -100,13 +100,9 @@ export async function POST(request: Request) {
     || value(values, 'Requirement summary', 5000);
   const opportunity = value(values, 'Opportunity or target market', 300);
   const timing = value(values, 'Preferred timing', 200);
-  const formLoadedAt = Number(value(values, 'form_loaded_at', 20));
 
   if (name.length < 2 || !isEmail(email) || summary.length < 10) {
     return NextResponse.json({ error: 'Please enter a valid name, email address, and message.' }, { status: 400 });
-  }
-  if (!Number.isFinite(formLoadedAt) || Date.now() - formLoadedAt < 2500 || formLoadedAt > Date.now()) {
-    return NextResponse.json({ error: 'Please take a moment to review the form and submit again.' }, { status: 400 });
   }
 
   if (!checkRateLimit(request)) {

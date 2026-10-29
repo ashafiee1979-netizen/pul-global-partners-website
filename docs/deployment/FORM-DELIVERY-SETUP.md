@@ -12,7 +12,7 @@ The implementation uses `send.one.com` on port `465` with implicit TLS. one.com'
 
 ## Spam Controls
 
-The forms use a hidden honeypot field, a minimum completion-time check, and a best-effort per-instance rate limit (six valid requests per IP per ten-minute window). This avoids a third-party CAPTCHA account, but the in-memory throttle is not shared across Vercel function instances and is less robust than a managed CAPTCHA or durable rate-limit store.
+The forms use a hidden honeypot field and a best-effort per-instance rate limit (six valid requests per IP per ten-minute window). This avoids a third-party CAPTCHA account, but the in-memory throttle is not shared across Vercel function instances and is less robust than a managed CAPTCHA or durable rate-limit store.
 
 ## Vercel Environment Variables
 
@@ -35,7 +35,7 @@ After redeployment:
 1. Submit a Strategy Call request using an inbox you control. Confirm it reaches `info@pulglobal.com` and that the submitter receives an acknowledgement.
 2. Submit a partnership inquiry. Confirm it reaches `partner@pulglobal.com` and the submitter receives an acknowledgement.
 3. Reply to each internal notification and confirm it addresses the submitter; inspect spam/junk folders and sender authentication.
-4. Test a too-fast submission, empty required fields, a filled honeypot, and repeated submissions. None should create unwanted inquiry email.
+4. Test empty required fields, a filled honeypot, and repeated submissions. None should create unwanted inquiry email.
 5. Confirm an SMTP failure is shown as a failure and does not display a false success message.
 
 Vercel documents environment variable setup under [Managing Environment Variables](https://vercel.com/docs/environment-variables/managing-environment-variables). Do not change MX records or move nameservers as part of this email-sending setup.

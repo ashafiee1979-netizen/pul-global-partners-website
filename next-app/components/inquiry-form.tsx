@@ -1,6 +1,6 @@
 'use client';
 
-import { FormEvent, useEffect, useRef, useState } from 'react';
+import { FormEvent, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 type FormResponse = {
@@ -11,13 +11,8 @@ type FormResponse = {
 
 export function InquiryForm({ schedule = false, partnership = false }: { schedule?: boolean; partnership?: boolean }) {
   const formRef = useRef<HTMLFormElement>(null);
-  const [startedAt, setStartedAt] = useState(0);
   const [sending, setSending] = useState(false);
   const [feedback, setFeedback] = useState<{ kind: 'success' | 'error'; text: string }>();
-
-  useEffect(() => {
-    setStartedAt(Date.now());
-  }, []);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -43,7 +38,6 @@ export function InquiryForm({ schedule = false, partnership = false }: { schedul
       }
 
       formRef.current?.reset();
-      setStartedAt(Date.now());
       setFeedback({
         kind: 'success',
         text: result.acknowledgementSent === false
@@ -71,8 +65,7 @@ export function InquiryForm({ schedule = false, partnership = false }: { schedul
         {schedule && <label>Preferred dates or timing<input name="Preferred timing" placeholder="Share a few dates and your time zone" maxLength={200} /></label>}
         <label>{partnership ? 'Opportunity and proposed role' : 'Requirement summary'}<textarea required name={partnership ? 'Opportunity and proposed role' : 'Requirement summary'} rows={5} maxLength={5000} placeholder={partnership ? 'Describe the opportunity, the capability your organization brings, a possible role, and anticipated timing.' : 'Objective, operating context, timeframe, and support needed'} /></label>
         <div className="form-honeypot" aria-hidden="true"><label>Leave this field blank<input name="company_website" tabIndex={-1} autoComplete="off" /></label></div>
-        <input type="hidden" name="form_loaded_at" value={startedAt} />
-        <button className="button" type="submit" disabled={sending || startedAt === 0}>
+        <button className="button" type="submit" disabled={sending}>
           {sending ? 'Sending...' : schedule ? 'Send Strategy Call Request' : partnership ? 'Send Partnership Inquiry' : 'Send Inquiry'}<ArrowRight aria-hidden="true" />
         </button>
         {feedback && <p className={feedback.kind === 'success' ? 'form-success' : 'form-error'} role={feedback.kind === 'success' ? 'status' : 'alert'}>{feedback.text}</p>}
