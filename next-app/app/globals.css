@@ -261,7 +261,6 @@ h2{font-size:3.65rem;line-height:1.08}
 .contact-inquiry-form label,.schedule-form label,.callback-form label{margin-bottom:16px}
 .contact-inquiry-form .form-row,.callback-form .form-row,.schedule-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .form-note{font-size:.78rem!important;line-height:1.55!important;color:#667983!important;margin:13px 0 0!important}
-.form-human-check{min-height:65px;margin:2px 0 14px;display:flex;align-items:center}
 .form-error,.form-success{margin:12px 0 0;padding:11px 13px;border-left:3px solid;font-size:.88rem;line-height:1.55}
 .form-error{border-color:#a53a3a;background:#fff5f3;color:#782626}
 .form-success{border-color:#16805b;background:#eff8f4;color:#14583f}

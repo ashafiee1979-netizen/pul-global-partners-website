@@ -6,6 +6,10 @@ export const runtime = 'nodejs';
 type FormType = 'strategy-call' | 'partnership' | 'general';
 type FormValues = Record<string, unknown>;
 
+const RATE_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT = 6;
+const submissions = new Map<string, { count: number; expiresAt: number }>();
+
 const recipients: Record<FormType, string> = {
   'strategy-call': 'info@pulglobal.com',
   partnership: 'partner@pulglobal.com',
@@ -25,37 +29,39 @@ function getEmailSettings() {
   const smtpUser = process.env.SMTP_USER;
   const smtpPass = process.env.SMTP_PASS;
   const fromEmail = process.env.MAIL_FROM_EMAIL || smtpUser;
-  const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
-  const allowedHostnames = (process.env.TURNSTILE_ALLOWED_HOSTNAMES || '')
-    .split(',')
-    .map((hostname) => hostname.trim().toLowerCase())
-    .filter(Boolean);
-  const smtpPort = Number(process.env.SMTP_PORT || 587);
+  const smtpPort = Number(process.env.SMTP_PORT || 465);
 
-  if (!smtpUser || !smtpPass || !fromEmail || !turnstileSecret || !allowedHostnames.length || ![465, 587].includes(smtpPort)) return null;
+  if (!smtpUser || !smtpPass || !fromEmail || ![465, 587].includes(smtpPort)) return null;
 
   return {
     smtpUser,
     smtpPass,
     fromEmail,
-    turnstileSecret,
-    allowedHostnames,
     smtpHost: process.env.SMTP_HOST || 'send.one.com',
     smtpPort,
   };
 }
 
-async function validateHuman(token: string, secret: string, allowedHostnames: string[]) {
-  const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({ secret, response: token }),
-    signal: AbortSignal.timeout(8000),
-  });
+function checkRateLimit(request: Request) {
+  const ip = request.headers.get('x-real-ip') || request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+  const now = Date.now();
 
-  if (!response.ok) return false;
-  const result = (await response.json()) as { success?: boolean; hostname?: string };
-  return Boolean(result.success && result.hostname && allowedHostnames.includes(result.hostname.toLowerCase()));
+  if (submissions.size > 5000) {
+    for (const [key, entry] of submissions) {
+      if (entry.expiresAt <= now) submissions.delete(key);
+    }
+  }
+
+  const current = submissions.get(ip);
+
+  if (!current || current.expiresAt <= now) {
+    submissions.set(ip, { count: 1, expiresAt: now + RATE_WINDOW_MS });
+    return true;
+  }
+  if (current.count >= RATE_LIMIT) return false;
+
+  current.count += 1;
+  return true;
 }
 
 export async function POST(request: Request) {
@@ -69,7 +75,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'The submitted message is too large.' }, { status: 413 });
   }
 
-  let body: { formType?: FormType; values?: FormValues; turnstileToken?: string };
+  let body: { formType?: FormType; values?: FormValues };
   try {
     body = (await request.json()) as typeof body;
   } catch {
@@ -78,9 +84,8 @@ export async function POST(request: Request) {
 
   const formType = body.formType;
   const values = body.values;
-  const token = body.turnstileToken;
-  if (typeof formType !== 'string' || !Object.hasOwn(recipients, formType) || !values || typeof values !== 'object' || typeof token !== 'string' || !token) {
-    return NextResponse.json({ error: 'Please complete the verification and required fields.' }, { status: 400 });
+  if (typeof formType !== 'string' || !Object.hasOwn(recipients, formType) || !values || typeof values !== 'object') {
+    return NextResponse.json({ error: 'Please check the form and try again.' }, { status: 400 });
   }
 
   if (value(values, 'company_website', 300)) {
@@ -95,17 +100,20 @@ export async function POST(request: Request) {
     || value(values, 'Requirement summary', 5000);
   const opportunity = value(values, 'Opportunity or target market', 300);
   const timing = value(values, 'Preferred timing', 200);
+  const formLoadedAt = Number(value(values, 'form_loaded_at', 20));
 
   if (name.length < 2 || !isEmail(email) || summary.length < 10) {
     return NextResponse.json({ error: 'Please enter a valid name, email address, and message.' }, { status: 400 });
   }
+  if (!Number.isFinite(formLoadedAt) || Date.now() - formLoadedAt < 2500 || formLoadedAt > Date.now()) {
+    return NextResponse.json({ error: 'Please take a moment to review the form and submit again.' }, { status: 400 });
+  }
 
-  try {
-    if (!(await validateHuman(token, settings.turnstileSecret, settings.allowedHostnames))) {
-      return NextResponse.json({ error: 'Human verification expired or was not accepted. Please verify and try again.' }, { status: 400 });
-    }
-  } catch {
-    return NextResponse.json({ error: 'Human verification is temporarily unavailable. Please try again shortly.' }, { status: 503 });
+  if (!checkRateLimit(request)) {
+    return NextResponse.json({ error: 'Too many messages were submitted. Please wait a few minutes and try again.' }, {
+      status: 429,
+      headers: { 'Retry-After': '600' },
+    });
   }
 
   const isPartnership = formType === 'partnership';
