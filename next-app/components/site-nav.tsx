@@ -7,7 +7,7 @@ import { MessageSquareText, FileDown, Menu, X } from 'lucide-react';
 
 const links = [
   ['Home', '/'], ['Solutions', '/solutions/'], ['Who We Are', '/about/'],
-  ['Partner With Us', '/contact/'],
+  ['Insights', '/insights/'], ['Partner With Us', '/contact/'],
 ] as const;
 
 export function SiteNav({ current }: { current?: string }) {
