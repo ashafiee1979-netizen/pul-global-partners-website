@@ -1,6 +1,6 @@
 # PUL Global Partners Website
 
-This is the separate Next.js and TypeScript review build. It does not change the existing WordPress site or the previously deployed Vercel prototype. The application is configured to produce static files and does not require a production Node.js server for its current pages.
+This is the separate Next.js and TypeScript site. It does not change the existing WordPress site or the previously deployed Vercel prototype. It uses Next.js serverless functions for validated contact-form delivery; deploy it to Vercel or another compatible Node.js host, not as a static-only export.
 
 ## Local review
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Next.js. For a production-like static build, run `npm run build`; the deployable static site is written to `out/`.
+Open the local URL printed by Next.js. Run `npm run build` to validate the production build. Local form delivery requires the environment variables documented in `../docs/deployment/FORM-DELIVERY-SETUP.md`.
 
 ## Updating an Insights article
 
@@ -22,8 +22,8 @@ Current sample articles carry forward the three original perspective pieces from
 
 ## Boundaries
 
-- No database, hosted CMS, server-side form handler, scheduling integration, analytics service, or credentials are included.
-- Contact forms prepare an email draft and do not send automatically.
-- The scheduling page captures preferred timing in an email draft; it does not reserve a calendar slot.
+- No database, hosted CMS, calendar booking integration, analytics service, or credentials are included.
+- Contact forms use a server-side API route, validate Cloudflare Turnstile tokens, and send the inquiry plus an acknowledgement email through authenticated one.com SMTP after required environment variables are configured.
+- The Strategy Call page sends a call request; it does not reserve a calendar slot.
 - Verify all organization-specific claims and historical attributions against the claim register before changing them.
 - Do not connect a Vercel project, push this build, change DNS, or deploy without the user's explicit approval.

@@ -1,5 +1,7 @@
 # Change Request 012 Next.js Codebase and Insights Workflow
 
+> Architecture note: Static export and email-draft form behavior below describe the initial approved scope. The server-side form workflow supersedes those constraints only for contact forms under ADR-004 and CR-013; other page content remains statically rendered where practical.
+
 ## Authorization
 
 - Approved by user: 2026-09-30

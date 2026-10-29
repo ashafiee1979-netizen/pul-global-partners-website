@@ -1,10 +1,18 @@
 # Change Log
 
+## 2026-10-29 Secure Form Delivery Foundation
+
+- Replaced client-side email drafts with a Next.js serverless form endpoint. Strategy Call messages route to `info@pulglobal.com`; Partnership messages route to `partner@pulglobal.com`; each sender receives a plain-text acknowledgement after PUL's notification is accepted by SMTP.
+- Added Cloudflare Turnstile client widget and mandatory server-side validation, a honeypot, bounded input validation, clear submission states, and safe failure behavior. No message database or calendar booking was added.
+- Switched from static-only export to Vercel's Next.js serverless runtime. Upgraded Next.js and `@next/mdx` to 16.4.3 following npm's critical advisory; `npm audit` now reports zero vulnerabilities.
+- Added ADR-004, CR-013, form setup/deployment guidance, and a project-plan amendment. SMTP/Turnstile credentials are not present; live email sending awaits owner configuration and inbox tests.
+- `npm run typecheck`, `npm run build` (15 routes including `/api/contact`), and `npm audit` (0 vulnerabilities) passed. Negative-path checks rejected missing configuration, malformed fields, and invalid human-verification tokens. An integration test with Cloudflare's official test secret and a mock SMTP server verified both recipient routes and both acknowledgements. No real email was sent; live mailbox delivery still awaits owner setup. No push or deployment performed.
+
 ## 2026-10-29 Phone and Capability Statement Update
 
 - Replaced the public Capability Statement PDF with the new October 29, 2026 version from the Profile folder. The existing download and embedded-preview URL remains unchanged; the replacement PDF includes the new phone number.
 - Updated the Partner With Us contact details and click-to-call link, plus the shared footer, to `+1-540-993-7496`.
-- `npm run typecheck`, `npm run build` (14 routes), local Contact HTTP check (200), PDF HTTP check (200), and `git diff --check` passed. Changes are local only; not pushed or deployed.
+- `npm run typecheck`, `npm run build` (14 routes), local Contact HTTP check (200), and PDF HTTP check (200) passed. GitHub push completed in commit `117b57e`; Vercel deployment status was not verified.
 
 ## 2026-10-28 Partner Form and Intro Alignment
 

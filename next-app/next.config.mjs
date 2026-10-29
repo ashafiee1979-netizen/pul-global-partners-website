@@ -6,7 +6,6 @@ const withMDX = createMDX({
 
 export default withMDX({
   devIndicators: false,
-  output: 'export',
   trailingSlash: true,
   pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
   images: { unoptimized: true },

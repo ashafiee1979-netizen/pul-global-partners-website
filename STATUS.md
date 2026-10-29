@@ -2,18 +2,19 @@
 
 ## State
 
-- Phase: Company Profile alignment, Who We Are and Insights refinement, and Partner With Us page implemented locally; awaiting user review
+- Phase: Website review readiness and secure form delivery; owner configuration and end-to-end email verification pending
 - Plan version: 1.1 architecture amendment approved
 - Implementation authorization: Granted by user on 2026-09-16
-- Live WordPress site: unchanged. Existing Vercel review prototype remains at https://pul-global-partners-website.vercel.app/ and is not being modified by this work. Latest local Home preview: http://localhost:4175/.
-- Latest refinement (2026-10-29): updated the Partner With Us phone number and click-to-call link, shared footer phone, and public Capability Statement PDF using the new October 29 version from the Profile folder. The existing PDF URL is preserved. Typecheck, optimized build (14 routes), local Contact/PDF HTTP checks (200), and `git diff --check` passed. Changes are local only; not pushed or deployed.
+- Live WordPress site: unchanged. The Vercel review site remains at https://pul-global-partners-website.vercel.app/. Latest local review server: http://localhost:4175/.
+- Latest refinement (2026-10-29): implemented automatic server-side form delivery, recipient routing, sender acknowledgements, Turnstile verification, honeypot/input controls, and clear form states. Removed static export so Vercel can run `/api/contact`; upgraded Next.js to 16.4.3 after a critical advisory. Typecheck, optimized build (15 routes), npm audit (0 vulnerabilities), and negative-path tests passed. A local integration test using Cloudflare's official test secret plus mock SMTP confirmed both inbox routes and acknowledgements. Awaiting owner setup of real one.com SMTP and Turnstile variables; no real message was sent and this work is not pushed/deployed.
+- Previous refinement (2026-10-29): updated the Partner With Us phone number/click-to-call link, shared footer phone, and public Capability Statement PDF using the new October 29 version from the Profile folder. The existing PDF URL is preserved. GitHub push completed in commit `117b57e`; Vercel deployment status was not verified.
 - Previous refinement (2026-10-28): reorganized the partnership conversation area into a two-column layout, with heading/copy/contact details at left and the form aligned at top-right; mobile stacks naturally. Typecheck, optimized build (14 routes), local Partner With Us HTTP check (200), and `git diff --check` passed. No push or deployment performed.
 - Previous refinement (2026-10-28): added coordinated, varied color tints and matching accents to Solutions platform, service, economic-growth, and delivery cards while preserving contrast and reduced-motion behavior. Typecheck, optimized build (14 routes), local Solutions HTTP check (200), and `git diff --check` passed. No push or deployment performed.
 - Previous refinement (2026-10-28): strengthened the blue accent on the five requested Home section-title phrases; other title and brand colors remain unchanged. Typecheck, optimized build (14 routes), local Home HTTP check (200), and `git diff --check` passed. No push or deployment performed.
 - Previous refinement (2026-10-28): balanced the Home “Who we are” intro by placing its three existing proof points beneath the headline in the open desktop column; narrative and CTAs remain grouped on the right, with a single-column reading order on tablet/mobile. Typecheck and optimized build (14 routes) passed. No push or deployment performed.
 - Previous refinement (2026-10-28): redesigned “Where PUL Fits” as image-free audience and engagement pathways; removed the Home “Procurement Ready” panel while retaining the footer Capability Statement link. The section was reviewed at desktop and phone widths. Typecheck, optimized build (14 routes), local Home HTTP check (200), and `git diff --check` passed. No push or deployment performed.
 - Latest Home refinement (2026-10-26): photo-heavy service cards replaced with a responsive text-first six-platform directory; each link routes to its Solutions detail anchor. TypeScript, optimized build, desktop browser review, link/anchor accessibility check, and `git diff --check` passed. No deployment performed.
-- Active blockers: None for local prototype completion; production integrations remain pending selection of form and scheduling providers
+- Active setup required: one.com sending mailbox and credentials, confirmation that `partner@pulglobal.com` receives mail, Cloudflare Turnstile keys/hostnames, and Vercel Preview/Production environment-variable configuration. Actual inbox testing is pending these owner-controlled values.
 
 ## Completed
 
@@ -94,12 +95,17 @@
 
 ## Next session starts here
 
-1. Review the updated statement at http://localhost:4175/capability/ and confirm the new phone details at http://localhost:4175/contact/ and in the footer.
-2. These phone/PDF changes are local and have not been pushed or deployed. Before connecting `pulglobal.com`, verify the Vercel deployment and the updated site, then preserve existing one.com email DNS records during cutover.
-3. Confirm calendar-booking and form-submission provider requirements with IT before integrating them; the current inquiry flow opens an email draft and makes no booking.
+1. Complete the owner steps in `docs/deployment/FORM-DELIVERY-SETUP.md`: confirm the recipient mailboxes, select/create an authenticated one.com sender mailbox, create Turnstile keys/hostname allowlist, and enter secrets into Vercel Preview and Production.
+2. Redeploy and test both paths end-to-end using controlled addresses; confirm actual PUL delivery, acknowledgements, reply-to behavior, spam placement, and SMTP failure states. The routing, Turnstile verification, and acknowledgements already passed local test-key/mock-SMTP integration tests.
+3. Review the updated site at `http://localhost:4175/schedule/` and `http://localhost:4175/contact/`. The forms remain disabled locally until the public Turnstile site key is configured.
+4. Push/deploy only after review and owner configuration; custom-domain cutover remains separate and must preserve one.com email records. Strategy Call does not book a calendar slot.
 
 ## Last session
 
+- Date: 2026-10-29
+- Result: Built secure server-side form delivery and automatic acknowledgements using one.com SMTP and Cloudflare Turnstile, changed the Next.js deployment from static export to serverless, and patched Next.js. Build/audit, negative-path tests, and mock-SMTP integration for both recipient/acknowledgement paths passed; waiting on account-owner secrets and real inbox tests. No push or deploy.
+- Date: 2026-10-29
+- Result: Split form recipients so Strategy Call drafts go to `info@pulglobal.com` and partnership drafts to `partner@pulglobal.com`. Still client-side `mailto` drafts; automatic SMTP sending is pending.
 - Date: 2026-10-29
 - Result: Replaced the website's Capability Statement PDF with the new Profile-folder version and changed the Contact/footer phone number to `+1-540-993-7496`. Typecheck, optimized build (14 routes), local Contact/PDF HTTP checks (200), and `git diff --check` passed. No push or deployment performed.
 - Date: 2026-10-28
