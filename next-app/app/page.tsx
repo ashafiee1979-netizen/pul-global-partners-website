@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, CalendarDays, Check, ClipboardCheck, Compass, Network, RefreshCw, ShieldCheck, Users, BriefcaseBusiness, Building2, Landmark, Globe2 } from 'lucide-react';
 import { SiteLayout } from '@/components/site-layout';
 import { Counter } from '@/components/counter';
+import { InsightCarousel } from '@/components/insight-carousel';
 import styles from './home.module.css';
 
 const platforms = [
@@ -79,6 +80,8 @@ export default function HomePage() {
       <div className={styles.engagementBlock}><div className={styles.engagementIntro}><p className="eyebrow">Engagement models</p><p>Choose the right role for the opportunity.</p></div><div className={styles.engagementGrid}>{engagementModels.map(({ title, text }) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></div>
       <div className={styles.fitCta}><p>Have an opportunity or complementary capability to discuss?</p><Link className="button" href="/contact/#pathways">Explore partnership opportunities<ArrowRight aria-hidden="true" /></Link></div>
     </div></section>
+
+    <InsightCarousel />
 
     <section className="contact"><div className="shell contact-form-grid"><div><p className="eyebrow light">Start a conversation</p><h2>Bring us the mission.<br />We’ll help structure the execution.</h2><p>Request a focused strategy call or send us the essentials for a direct follow-up.</p><div className="button-row"><Link className="button button-light" href="/schedule/"><CalendarDays />Request a Strategy Call</Link><Link className="button button-ghost" href="/contact/">Partner With Us<ArrowRight /></Link></div></div><div className="contact-form-placeholder"><h3>Have a capability in mind?</h3><p>Review our platform overview and capability statement before we talk.</p><Link className="button" href="/capability/">View capability statement<ArrowRight /></Link></div></div></section>
   </main></SiteLayout></div>;

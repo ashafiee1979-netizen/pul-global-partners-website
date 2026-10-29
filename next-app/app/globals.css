@@ -416,9 +416,9 @@ html{scrollbar-gutter:stable}
 .brand img{width:210px;max-height:52px}
 .primary-nav{gap:clamp(14px,1.55vw,22px);font-size:.86rem;font-weight:700;white-space:nowrap}
 .primary-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 0 2px;color:#21445b}
-.primary-nav a:after{bottom:0;height:2px;transition:right .18s ease}
+.primary-nav a:after{left:0;right:0;bottom:0;height:3px;transform:scaleX(0);transform-origin:left center;transition:transform .18s ease}
+.primary-nav a:hover:after,.primary-nav a:focus-visible:after,.primary-nav a[aria-current=page]:after{transform:scaleX(1)}
 .primary-nav a:hover,.primary-nav a:focus-visible,.primary-nav a[aria-current=page]{color:#0b7194}
-.primary-nav a[aria-current=page]:after{right:0;height:3px}
 .nav-actions{flex:0 0 auto}
 .nav-actions .button{white-space:nowrap}
 .nav-call{min-width:154px;min-height:46px;justify-content:center;gap:9px;padding-inline:16px!important;border-color:#126b8c;background:#126b8c;box-shadow:0 3px 10px rgba(18,107,140,.16);font-size:.77rem!important;font-weight:800}
