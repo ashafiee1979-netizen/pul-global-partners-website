@@ -1,5 +1,11 @@
 # Change Log
 
+## 2026-10-29 Phone and Capability Statement Update
+
+- Replaced the public Capability Statement PDF with the new October 29, 2026 version from the Profile folder. The existing download and embedded-preview URL remains unchanged; the replacement PDF includes the new phone number.
+- Updated the Partner With Us contact details and click-to-call link, plus the shared footer, to `+1-540-993-7496`.
+- `npm run typecheck`, `npm run build` (14 routes), local Contact HTTP check (200), PDF HTTP check (200), and `git diff --check` passed. Changes are local only; not pushed or deployed.
+
 ## 2026-10-28 Partner Form and Intro Alignment
 
 - Reorganized “Start a partnership conversation” into a two-column layout: title, supporting copy, and direct-contact details remain together on the left while the form aligns at the top of the right column. Mobile stacks the columns.

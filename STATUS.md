@@ -6,7 +6,8 @@
 - Plan version: 1.1 architecture amendment approved
 - Implementation authorization: Granted by user on 2026-09-16
 - Live WordPress site: unchanged. Existing Vercel review prototype remains at https://pul-global-partners-website.vercel.app/ and is not being modified by this work. Latest local Home preview: http://localhost:4175/.
-- Latest refinement (2026-10-28): reorganized the partnership conversation area into a two-column layout, with heading/copy/contact details at left and the form aligned at top-right; mobile stacks naturally. Typecheck, optimized build (14 routes), local Partner With Us HTTP check (200), and `git diff --check` passed. No push or deployment performed.
+- Latest refinement (2026-10-29): updated the Partner With Us phone number and click-to-call link, shared footer phone, and public Capability Statement PDF using the new October 29 version from the Profile folder. The existing PDF URL is preserved. Typecheck, optimized build (14 routes), local Contact/PDF HTTP checks (200), and `git diff --check` passed. Changes are local only; not pushed or deployed.
+- Previous refinement (2026-10-28): reorganized the partnership conversation area into a two-column layout, with heading/copy/contact details at left and the form aligned at top-right; mobile stacks naturally. Typecheck, optimized build (14 routes), local Partner With Us HTTP check (200), and `git diff --check` passed. No push or deployment performed.
 - Previous refinement (2026-10-28): added coordinated, varied color tints and matching accents to Solutions platform, service, economic-growth, and delivery cards while preserving contrast and reduced-motion behavior. Typecheck, optimized build (14 routes), local Solutions HTTP check (200), and `git diff --check` passed. No push or deployment performed.
 - Previous refinement (2026-10-28): strengthened the blue accent on the five requested Home section-title phrases; other title and brand colors remain unchanged. Typecheck, optimized build (14 routes), local Home HTTP check (200), and `git diff --check` passed. No push or deployment performed.
 - Previous refinement (2026-10-28): balanced the Home “Who we are” intro by placing its three existing proof points beneath the headline in the open desktop column; narrative and CTAs remain grouped on the right, with a single-column reading order on tablet/mobile. Typecheck and optimized build (14 routes) passed. No push or deployment performed.
@@ -93,12 +94,14 @@
 
 ## Next session starts here
 
-1. Review Partner With Us at http://localhost:4175/contact/ alongside Home at http://localhost:4175/, Solutions at http://localhost:4175/solutions/, and Who We Are at http://localhost:4175/about/; capture any remaining visual or content changes as focused requests.
-2. Keep `pulglobal.com`, WordPress, and DNS unchanged; the local redesign has not been pushed or deployed in this session.
+1. Review the updated statement at http://localhost:4175/capability/ and confirm the new phone details at http://localhost:4175/contact/ and in the footer.
+2. These phone/PDF changes are local and have not been pushed or deployed. Before connecting `pulglobal.com`, verify the Vercel deployment and the updated site, then preserve existing one.com email DNS records during cutover.
 3. Confirm calendar-booking and form-submission provider requirements with IT before integrating them; the current inquiry flow opens an email draft and makes no booking.
 
 ## Last session
 
+- Date: 2026-10-29
+- Result: Replaced the website's Capability Statement PDF with the new Profile-folder version and changed the Contact/footer phone number to `+1-540-993-7496`. Typecheck, optimized build (14 routes), local Contact/PDF HTTP checks (200), and `git diff --check` passed. No push or deployment performed.
 - Date: 2026-10-28
 - Result: Refined Partner With Us card colors, added a numbered collaboration process, and tightened the partnership inquiry section and form spacing while preserving email-draft behavior. Typecheck, optimized build (14 routes), local HTTP 200, and `git diff --check` passed. No push or deployment performed.
 - Previous pass unified the Solutions, Who We Are, and Partner With Us heroes into a consistent 620 px desktop split layout, 45% text panel, 55% image panel, no copy/image overlap, matched title scale, and stacked image below text at phone/portrait-tablet widths. Browser measurements at 1536 px confirmed equal boundaries and heights; all three heroes visually inspected.
