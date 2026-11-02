@@ -801,6 +801,8 @@
 .platformSection:nth-of-type(4) { --platform-accent: #a45f3a; }
 .platformSection:nth-of-type(5) { --platform-accent: #397b86; }
 .platformSection:nth-of-type(6) { --platform-accent: #557047; }
+.platformSection:nth-of-type(7) { --platform-accent: #a45f3a; }
+.platformSection:nth-of-type(8) { --platform-accent: #426aa7; }
 
 .platformSection:nth-of-type(even) {
   background: #f4f7f9;
@@ -1049,6 +1051,14 @@
   --card-accent: #557047;
 }
 
+.platformGrid :global(.platform-link:nth-child(7) > div) {
+  --card-accent: #a45f3a;
+}
+
+.platformGrid :global(.platform-link:nth-child(8) > div) {
+  --card-accent: #426aa7;
+}
+
 .platformGrid :global(.platform-link > div > p) {
   color: var(--card-accent);
 }
@@ -1095,4 +1105,257 @@
 @media (prefers-reduced-motion: reduce) {
   .serviceCard { transition: none; }
   .serviceCard:hover { transform: none; }
+}
+
+.businessDevelopment {
+  background: #fff;
+}
+
+.businessHeading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, .88fr);
+  align-items: end;
+  gap: 48px;
+  margin-bottom: 30px;
+}
+
+.businessHeading h2 {
+  margin: 0;
+  color: var(--solutions-ink);
+  font-size: 46px;
+  line-height: 1.14;
+  text-wrap: balance;
+}
+
+.businessHeading h2 span {
+  color: #17698b;
+}
+
+.businessLead {
+  margin: 0 0 10px;
+  color: #2b4656;
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.62;
+}
+
+.businessScope {
+  margin: 0;
+  color: var(--solutions-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.businessCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.businessCards article {
+  --business-accent: #17698b;
+  min-height: 270px;
+  padding: 23px;
+  border: 1px solid #d5e1e7;
+  border-top: 4px solid var(--business-accent);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--business-accent) 5%, white);
+}
+
+.businessCards article:nth-child(2) { --business-accent: #287c78; }
+.businessCards article:nth-child(3) { --business-accent: #a45f3a; }
+
+.businessIcon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  background: var(--business-accent);
+  color: #fff;
+}
+
+.businessIcon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.businessStep {
+  margin: 0 0 7px;
+  color: var(--business-accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.businessCards h3 {
+  margin: 0 0 9px;
+  color: var(--solutions-ink);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.businessCards article > p:last-child {
+  margin: 0;
+  color: #536a76;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.businessWorkflow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 18px 20px;
+  border: 1px solid #d5e1e7;
+  border-radius: 4px;
+  background: #f1f6f8;
+}
+
+.businessWorkflow > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.businessWorkflow > div > span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 50%;
+  background: #17698b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.businessWorkflow p {
+  margin: 0;
+  color: var(--solutions-ink);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.businessWorkflow > svg {
+  width: 17px;
+  height: 17px;
+  color: #66818d;
+}
+
+.businessNote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #d5e1e7;
+}
+
+.businessNote > p {
+  max-width: 770px;
+  margin: 0;
+  color: var(--solutions-muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.businessNote strong {
+  color: var(--solutions-ink);
+}
+
+.businessNote .button {
+  flex: 0 0 auto;
+}
+
+.businessLaunch {
+  background: #f0f5f7;
+}
+
+.businessDevelopmentSection {
+  background: #fff;
+}
+
+.internationalOffice {
+  background: #eef5f8;
+}
+
+.platformGrid :global(.platform-link:nth-child(7) > div),
+.platformGrid :global(.platform-link:nth-child(8) > div) {
+  min-height: 230px;
+}
+
+.solutionNote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #d5e1e7;
+}
+
+.solutionNote > p {
+  max-width: 790px;
+  margin: 0;
+  color: #536a76;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.solutionNote strong {
+  color: var(--solutions-ink);
+}
+
+.solutionNote .button {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .businessHeading {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .businessCards article { min-height: 250px; }
+
+  .businessWorkflow {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .businessWorkflow > svg { display: none; }
+}
+
+@media (max-width: 760px) {
+  .businessHeading h2 { font-size: 38px; }
+  .businessLead { font-size: 17px; }
+  .businessCards { grid-template-columns: 1fr; }
+  .businessCards article {
+    min-height: 0;
+    padding: 21px;
+  }
+
+  .businessWorkflow {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .businessNote {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .solutionNote {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
 }

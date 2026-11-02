@@ -51,6 +51,6 @@ export function InsightsBrowser() {
         </article>)}</div> : <p className={styles.emptyState}>No articles are currently filed under {activeTopic}. Choose another topic to continue browsing.</p>}
       </div>
     </section>
-    <section className={styles.cta}><div className="shell"><div><p className="eyebrow light">Ready to discuss an opportunity?</p><h2>Bring us the requirement.<br />We’ll help shape the next step.</h2><p>Explore our solutions or schedule a focused strategy conversation with our team.</p></div><div className={styles.ctaActions}><Link className="button button-light" href="/schedule/">Request a Strategy Call<ArrowRight aria-hidden="true" /></Link><Link className="button button-ghost" href="/solutions/">Explore Our Solutions<ArrowRight aria-hidden="true" /></Link></div></div></section>
+    <section className={styles.cta}><div className="shell"><div><p className="eyebrow light">Ready to discuss an opportunity?</p><h2>Bring us the requirement.<br />We’ll help shape the next step.</h2><p>Explore our solutions or schedule a focused strategy conversation with our team.</p></div><div className={styles.ctaActions}><Link className="button button-light" href="/schedule/">Request a Strategy Call<ArrowRight aria-hidden="true" /></Link><Link className="button button-ghost" href="/solutions/">Explore our solutions<ArrowRight aria-hidden="true" /></Link></div></div></section>
   </>;
 }

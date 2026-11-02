@@ -1,5 +1,62 @@
 # Change Log
 
+## 2026-11-02 Website Language Consistency Review
+
+- Removed the outdated fixed service-count wording from the Capability page while preserving its Company Profile scope and distinction from the separately approved PDF.
+- Standardized company description wording, U.S. government capitalization, the first-use expansion of SME, and the “Request a Strategy Call” CTA label. Kept the distinction between U.S. and international launch services clear.
+- Reviewed visible copy across Home, Solutions, About, Capability, Contact, Schedule, Insights, and the article collection for tone, grammar, terminology, and consistent claims.
+- `npm run typecheck`, optimized build (25 routes), primary-route HTTP checks, and `git diff --check` passed. No push or deployment performed.
+
+## 2026-11-02 Solutions Flexible Engagement Placement
+
+- Moved Flexible Engagement to follow the Solutions overview cards and precede the detailed service descriptions, where it explains how visitors can engage before they explore each scope.
+- Tightened the overview introduction to avoid repeating the section’s message. Preserved the closing contact CTA.
+- `npm run typecheck`, optimized build (25 routes), local Solutions section-order check, and `git diff --check` passed. No push or deployment performed.
+
+## 2026-11-02 Solutions Closing CTA Restored
+
+- Restored the closing “Start with the requirement / Let’s identify the right delivery model” section after Flexible Engagement, matching the other page endings and preserving its Partner With Us contact link.
+- Verified local rendering and link presence. `npm run typecheck` and `git diff --check` passed. No push or deployment performed.
+
+## 2026-11-02 Solutions Closing CTA Removal
+
+- Removed the redundant “Start with the requirement / Let’s identify the right delivery model” closing CTA. Service-specific discussion links remain; Flexible Engagement now ends the page content before the shared footer.
+- `npm run typecheck`, optimized build (25 routes), local Solutions HTTP/content check, and `git diff --check` passed. No push or deployment performed.
+
+## 2026-11-02 Solutions Flexible Engagement Section Relocation
+
+- Moved “Flexible engagement / Support matched to the mission” from immediately below the hero to the bottom of the Solutions service content, just before the closing contact call-to-action.
+- Verified the rendered section order. `npm run typecheck`, optimized build (25 routes), and `git diff --check` passed. Local review: `http://localhost:3000/solutions/`. No push or deployment performed.
+
+## 2026-11-02 Home and Solutions Content Redundancy Review
+
+- Audited the Home and Solutions pages for duplicate service IDs and copy that blurred service boundaries. Confirmed each page has nine unique service IDs; the Home cards remain concise navigation links to the detailed Solutions scopes.
+- Removed business-development/proposal/grant overlap from Management Consulting, removed SME proposal overlap from the economic-growth section, and narrowed Program Implementation to delivery coordination. Clarified that U.S. Market Entry support is for international firms seeking a U.S. presence.
+- Replaced repeated service-list introductions with concise orientation copy; preserved dedicated service cards and full scope descriptions.
+- `npm run typecheck`, optimized build (25 routes), local HTTP/content checks for Home and Solutions, and `git diff --check` passed. No push or deployment performed.
+
+## 2026-11-02 International Office Launch Support
+
+- QA correction: removed a duplicated U.S. Business Launch entry in the Solutions data; verified one overview card and one corresponding detailed section remain.
+- Follow-up ordering refinement: U.S. Business Launch Support now leads the Home and Solutions lists, followed by International Office Launch Support and Business Development & Proposal Support, reflecting PUL's U.S. base.
+- Added International Office Launch Support as a standalone Home and Solutions offering, with a detailed scope and linked overview card.
+- Detailed market-entry assessment, local entity/branch and licensing coordination, office setup, local partners, staffing, and operational readiness. Potential markets include Central Asia and the Middle East (including Uzbekistan, Türkiye, UAE, Qatar, Oman, and Saudi Arabia), with other markets assessed case by case.
+- Clarified that scope depends on current country, sector, licensing, sanctions, export-control, and operating requirements; PUL coordinates qualified local providers rather than offering legal, tax, immigration, or other regulated advice directly. Tailored scope and third-party fees are confirmed before work begins.
+- Reviewed U.S. Department of Commerce country market-entry guidance and Treasury OFAC sanctions guidance. `npm run typecheck`, optimized build (25 routes), Home and Solutions HTTP/card-anchor checks, and `git diff --check` passed. Local preview: `http://localhost:3000/`. No push or deployment performed.
+
+## 2026-11-02 Business Launch and Business Development as Core Solutions
+
+- Added U.S. Business Launch Support and Business Development & Proposal Support as separate Solutions offerings, each with overview cards and full service-detail sections.
+- Added both offerings to the Home Page service cards and removed hard-coded service-count language from Home and Solutions.
+- Preserved consultation-led scoping without fixed packages. Clarified that launch support coordinates administrative steps rather than providing legal, tax, or immigration advice; included grant eligibility, client-approval, and no-award-guarantee qualifications for business development.
+- `npm run typecheck` and local Solutions browser content review passed. Production build and Home browser verification remain pending. Local review: `http://localhost:3000/`. No push or deployment performed.
+
+## 2026-11-02 Business Development & Proposal Support
+
+- Added a dedicated cross-cutting service section to Solutions for opportunity intelligence, business development/capture, proposal development, grants, and budget inputs.
+- Framed engagement as discovery-call-led and tailored to the client's portfolio and pursuit; no published packages or pricing. Added a four-stage workflow, a Partner With Us inquiry CTA, grant eligibility caveat, no-award-guarantee language, and client review/approval responsibility.
+- `npm run typecheck`, `npm run build`, local browser render/content inspection, and `git diff --check` passed. Local review: `http://localhost:3000/solutions/#business-development`. No push or deployment performed.
+
 ## 2026-10-29 Secure Form Delivery Foundation
 
 - Replaced client-side email drafts with a Next.js serverless form endpoint. Strategy Call messages route to `info@pulglobal.com`; Partnership messages route to `partner@pulglobal.com`; each sender receives a plain-text acknowledgement after PUL's notification is accepted by SMTP.

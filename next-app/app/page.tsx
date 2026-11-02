@@ -7,6 +7,9 @@ import { InsightCarousel } from '@/components/insight-carousel';
 import styles from './home.module.css';
 
 const platforms = [
+  { title: 'U.S. Business Launch Support', id: 'business-launch' },
+  { title: 'International Office Launch Support', id: 'international-office-launch' },
+  { title: 'Business Development & Proposal Support', id: 'business-development' },
   { title: 'Management Consulting & Advisory', id: 'management' },
   { title: 'Procurement Facilitation & Contract Management', id: 'procurement' },
   { title: 'Technology & Digital Solutions', id: 'technology' },
@@ -43,7 +46,7 @@ export default function HomePage() {
         <p className="hero-brand-line">A U.S.-registered implementation partner</p>
         <h1 className="animated-headline"><span>Built to execute</span><span>where complexity</span><span>is real.</span></h1>
         <p className="hero-lead">Partnering with federal buyers, prime contractors, and international organizations to turn complex requirements into accountable delivery.</p>
-        <div className="button-row"><Link className="button" href="/solutions/">Discover Our Solutions<ArrowRight aria-hidden="true" /></Link><Link className="button button-ghost" href="/schedule/"><CalendarDays aria-hidden="true" />Request a Strategy Call</Link></div>
+        <div className="button-row"><Link className="button" href="/solutions/">Discover our solutions<ArrowRight aria-hidden="true" /></Link><Link className="button button-ghost" href="/schedule/"><CalendarDays aria-hidden="true" />Request a Strategy Call</Link></div>
       </div>
     </section>
     <section className="impact-strip" aria-label="Institutional experience indicators"><div className="shell metrics">
@@ -56,18 +59,18 @@ export default function HomePage() {
     <section className="section intro" id="about"><div className={`shell split-intro ${styles.introGrid}`}>
       <div className={styles.introHeading}><p className="eyebrow section-kicker">Who we are</p><h2>U.S. accountability.<br /><span>Field-tested execution.</span></h2></div>
       <div className="intro-copy"><p className="lead">PUL Global Partners LLC combines U.S. contracting readiness with implementation experience built through PUL Consulting Services since 2010. We help government buyers, federal contractors, international organizations, businesses, and overseas missions move from objective to accountable execution.</p>
-        <p>Our six service platforms bring together consulting, procurement and contract management, technology, global trade and partnerships, mission support, and capacity building.</p>
+        <p>We scope each engagement around the work, bringing qualified specialists, local partners, and accountable coordination together as needed.</p>
         <p>We connect U.S.-based coordination with local knowledge and specialized expertise, initially focusing on Central Asia, the Middle East, and North Africa.</p>
         <div className="button-row intro-actions"><Link className="button" href="/schedule/">Request a Strategy Call<CalendarDays /></Link><Link className="text-link" href="/about/#projects">Explore our experience<ArrowUpRight /></Link></div>
       </div>
       <div className={`execution-proof ${styles.introProof}`}><div><ShieldCheck aria-hidden="true" /><span><strong>U.S.-based accountability</strong>Virginia-based corporate oversight</span></div><div><Network aria-hidden="true" /><span><strong>Partner-enabled scale</strong>Specialists, suppliers, and local networks</span></div><div><Check aria-hidden="true" /><span><strong>Evidence-led delivery</strong>Controls, reporting, and responsible closeout</span></div></div>
     </div></section>
 
-    <section className="section capabilities" id="capabilities"><div className="shell"><div className="section-heading platform-heading"><div><p className="eyebrow section-kicker">What we do</p><h2>Six service platforms<br /><span>One delivery mindset.</span></h2></div><p>Focused expertise across advisory, acquisition, technology, partnerships, mission delivery, and workforce development. Select a platform to explore its full scope.</p></div>
+    <section className="section capabilities" id="capabilities"><div className="shell"><div className="section-heading platform-heading"><div><p className="eyebrow section-kicker">What we do</p><h2>Integrated services<br /><span>One delivery mindset.</span></h2></div><p>Choose a focused service and explore its scope on the Solutions page. Capabilities can be combined when a requirement calls for broader coordination.</p></div>
       <div className={styles.platformLinks}>{platforms.map(({ title, id }) => <Link className={styles.platformCard} href={`/solutions/#${id}`} key={id}><span>{title}</span><ArrowUpRight aria-hidden="true" /></Link>)}</div>
     </div></section>
 
-    <section className="section economic-growth"><div className="shell"><div className="section-heading"><div><p className="eyebrow section-kicker">Economic growth &amp; SME support</p><h2>Connect enterprise,<br /><span>workforce, and markets.</span></h2></div><p>Our portfolio brings together business outreach, workforce development, training, employer engagement, market assessment, job placement, and trade-support activities.</p></div><div className="fit-grid"><div><BriefcaseBusiness /><h3>Build enterprise capability</h3><p>SME diagnostics, entrepreneurship training, proposal support, and practical responsible-AI adoption.</p></div><div><Network /><h3>Connect to opportunity</h3><p>Market surveys, trade linkages, job placement, employer engagement, and local coordination.</p></div><div><ClipboardCheck /><h3>Deliver and measure</h3><p>Participant logistics, implementation coordination, and performance reporting around program outcomes.</p></div></div><Link className="text-link" href="/solutions/#economic-growth">Explore SME and economic-growth support<ArrowUpRight /></Link></div></section>
+    <section className="section economic-growth"><div className="shell"><div className="section-heading"><div><p className="eyebrow section-kicker">Economic growth &amp; SME support</p><h2>Connect enterprise,<br /><span>workforce, and markets.</span></h2></div><p>Our portfolio brings together small and medium-sized enterprise (SME) support, workforce development, training, employer engagement, market assessment, job placement, and trade-support activities.</p></div><div className="fit-grid"><div><BriefcaseBusiness /><h3>Build enterprise capability</h3><p>SME diagnostics, entrepreneurship training, and practical responsible-AI adoption.</p></div><div><Network /><h3>Connect to opportunity</h3><p>Market surveys, trade linkages, job placement, employer engagement, and local coordination.</p></div><div><ClipboardCheck /><h3>Deliver and measure</h3><p>Participant logistics, implementation coordination, and performance reporting around program outcomes.</p></div></div><Link className="text-link" href="/solutions/#economic-growth">Explore SME and economic-growth support<ArrowUpRight /></Link></div></section>
 
     <section className="section delivery"><div className="shell"><div className="section-heading compact"><div><p className="eyebrow section-kicker">How we deliver</p><h2>Governed execution.<br /><span>Visible progress.</span></h2></div><p>A five-gate operating framework keeps decisions, ownership, quality, and evidence connected from initial requirement through continuity and closeout.</p></div>
       <div className="delivery-framework" aria-label="PUL delivery framework"><div className="delivery-rail" aria-hidden="true" />{gates.map(({ title, text, outcome, Icon }, index) => <article key={title}><div className="gate-top"><span>Gate {String(index + 1).padStart(2, '0')}</span><Icon aria-hidden="true" /></div><h3>{title}</h3><p>{text}</p><strong>{outcome}</strong></article>)}</div>

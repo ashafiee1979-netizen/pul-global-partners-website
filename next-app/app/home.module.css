@@ -1100,6 +1100,16 @@
   --platform-tint: #f3f5fa;
 }
 
+.platformCard:nth-child(7) {
+  --platform-accent: #a45f3a;
+  --platform-tint: #fbf5f0;
+}
+
+.platformCard:nth-child(8) {
+  --platform-accent: #426aa7;
+  --platform-tint: #f3f5fa;
+}
+
 .platformCard span {
   color: #183647;
   font-size: 17px;

@@ -16,6 +16,8 @@
 - Latest Home refinement (2026-10-26): photo-heavy service cards replaced with a responsive text-first six-platform directory; each link routes to its Solutions detail anchor. TypeScript, optimized build, desktop browser review, link/anchor accessibility check, and `git diff --check` passed. No deployment performed.
 - Active setup required: one.com sending mailbox and credentials, confirmation that `partner@pulglobal.com` receives mail, Cloudflare Turnstile keys/hostnames, and Vercel Preview/Production environment-variable configuration. Actual inbox testing is pending these owner-controlled values.
 
+- Latest refinement (2026-11-02): completed a website-wide language consistency pass. Removed the stale fixed service-count claim from the Capability page, aligned company-description and U.S. government terminology, expanded SME on first use, and standardized strategy-call CTA capitalization. Reviewed Home, Solutions, About, Capability, Contact, Schedule, Insights, and article copy. `npm run typecheck`, optimized build (25 routes), HTTP checks on primary routes, and `git diff --check` passed. No push or deployment performed.
+
 ## Completed
 
 - Live website review completed.
