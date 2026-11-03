@@ -1,5 +1,11 @@
 # Change Log
 
+## 2026-11-02 Navigation Scroll Reset
+
+- Fixed same-page navigation so clicking the current page tab returns to the top, including Home. Applied the behavior to the shared logo, primary navigation, and header actions without changing cross-page or in-page anchor behavior.
+- Production build (25 routes) and typecheck passed. Browser checks passed for same-page return-to-top on seven desktop routes, cross-page top reset from seven routes, and three mobile routes. Navigation state closed correctly after mobile selections. `git diff --check` passed.
+- Local production preview: `http://localhost:4179/`. No push or deployment performed.
+
 ## 2026-11-02 Capability Statement PDF Refreshed
 
 - Replaced the website PDF with the November 2 final Capability Statement from the Profile folder, preserving `/assets/documents/PUL-Global-Partners-Capability-Statement-2026.pdf` for both the page download and embedded preview.
