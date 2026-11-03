@@ -4,7 +4,7 @@
 
 - Replaced the website PDF with the November 2 final Capability Statement from the Profile folder, preserving `/assets/documents/PUL-Global-Partners-Capability-Statement-2026.pdf` for both the page download and embedded preview.
 - Confirmed the source and website asset are byte-identical by SHA-256. The PDF is an unencrypted, single landscape Letter page; rendered visual review completed.
-- Typecheck and optimized build (25 routes) passed. Local capability page and PDF endpoint return HTTP 200, with the PDF served as `application/pdf`; `git diff --check` passed. Production deployment follows this commit.
+- Typecheck and optimized build (25 routes) passed. Local capability page and PDF endpoint return HTTP 200, with the PDF served as `application/pdf`; `git diff --check` passed. Commit `f84f50c` was deployed to production as `dpl_2PFERzVfvccxkLGBZVQP5fNRpAkg`. The public page and PDF endpoint returned HTTP 200, and the live PDF SHA-256 matches the November 2 final source.
 
 ## 2026-11-02 Capability Card Color Refinement
 
