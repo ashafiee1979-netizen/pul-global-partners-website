@@ -1,0 +1,139 @@
+.capabilityGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.capabilityCard {
+  --card-accent: #16769c;
+  --card-tint: #e7f2f6;
+  --card-surface: #fff;
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 300px;
+  flex-direction: column;
+  padding: 28px 28px 24px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--card-surface);
+  transition: background .18s ease, box-shadow .18s ease;
+}
+
+.capabilityCard:nth-child(3n + 2) {
+  --card-accent: #23879a;
+  --card-tint: #e8f4f5;
+  --card-surface: #f5fafb;
+}
+
+.capabilityCard:nth-child(3n) {
+  --card-accent: #315f7a;
+  --card-tint: #eaf0f4;
+  --card-surface: #f8fafc;
+}
+
+.capabilityCard::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--card-accent);
+  content: "";
+}
+
+.capabilityCard:hover {
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(12, 45, 67, .1);
+}
+
+.cardIndex {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: #7b909c;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  margin-bottom: 22px;
+  background: var(--card-tint);
+  color: var(--card-accent);
+}
+
+.icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.capabilityCard h3 {
+  max-width: 360px;
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.22;
+}
+
+.capabilityCard > p {
+  margin: 0 0 20px;
+  color: #526571;
+  font-size: .92rem;
+  line-height: 1.62;
+}
+
+.capabilityCard > a {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 38%, transparent);
+  padding-bottom: 4px;
+  color: var(--card-accent);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.capabilityCard > a svg {
+  width: 16px;
+  height: 16px;
+  transition: transform .18s ease;
+}
+
+.capabilityCard > a:hover svg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 980px) {
+  .capabilityGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .capabilityCard {
+    min-height: 285px;
+  }
+}
+
+@media (max-width: 620px) {
+  .capabilityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .capabilityCard {
+    min-height: 0;
+    padding: 24px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .capabilityCard,
+  .capabilityCard > a svg {
+    transition: none;
+  }
+}

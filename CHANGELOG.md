@@ -1,5 +1,17 @@
 # Change Log
 
+## 2026-11-02 Capability Card Color Refinement
+
+- Added three coordinated blue/teal accent treatments to the Capability overview cards, applied consistently to each card edge, icon tile, and solution link.
+- Preserved card dimensions, responsive layout, and existing typography. Typecheck, optimized build (25 routes), and production-rendered viewport checks at 1440, 1280, 768, 390, and 360 px passed with no horizontal overflow or browser console errors. `git diff --check` passed. Production deployment requested; verify after push.
+
+## 2026-11-02 Capability Page Aligned to Solutions
+
+- Reworked the web-page capability overview to match the nine current Solutions areas, in the same order and with aligned scope summaries, including U.S. Business Launch, International Office Launch, and Business Development & Proposal Support.
+- Added responsive capability cards with direct links to the corresponding detailed Solutions sections. Updated the hero and document labels to distinguish the web overview from the current downloadable PDF.
+- Left the published Capability Statement PDF and its NAICS details unchanged pending the owner’s updated document.
+- `npm run typecheck`, optimized build (25 routes), nine anchor-target checks, and `git diff --check` passed. No push or deployment performed.
+
 ## 2026-11-02 Website Language Consistency Review
 
 - Removed the outdated fixed service-count wording from the Capability page while preserving its Company Profile scope and distinction from the separately approved PDF.
