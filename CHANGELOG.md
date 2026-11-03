@@ -3,7 +3,7 @@
 ## 2026-11-02 Capability Card Color Refinement
 
 - Added three coordinated blue/teal accent treatments to the Capability overview cards, applied consistently to each card edge, icon tile, and solution link.
-- Preserved card dimensions, responsive layout, and existing typography. Typecheck, optimized build (25 routes), and production-rendered viewport checks at 1440, 1280, 768, 390, and 360 px passed with no horizontal overflow or browser console errors. `git diff --check` passed. Production deployment requested; verify after push.
+- Preserved card dimensions, responsive layout, and existing typography. Typecheck, optimized build (25 routes), and production-rendered viewport checks at 1440, 1280, 768, 390, and 360 px passed with no horizontal overflow or browser console errors. `git diff --check` passed. Commit `a89dcba` was pushed and Vercel production deployment `dpl_GuTUnVn3F45st8xDmfXYdebFSuas` reached Ready; live capability page verified at both custom-domain aliases.
 
 ## 2026-11-02 Capability Page Aligned to Solutions
 
