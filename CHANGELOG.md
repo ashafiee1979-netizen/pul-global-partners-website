@@ -4,7 +4,7 @@
 
 - Fixed same-page navigation so clicking the current page tab returns to the top, including Home. Applied the behavior to the shared logo, primary navigation, and header actions without changing cross-page or in-page anchor behavior.
 - Production build (25 routes) and typecheck passed. Browser checks passed for same-page return-to-top on seven desktop routes, cross-page top reset from seven routes, and three mobile routes. Navigation state closed correctly after mobile selections. `git diff --check` passed.
-- Local production preview: `http://localhost:4179/`. No push or deployment performed.
+- Commit `eee3a63` deployed to production as `dpl_7RSf4mhwB6bYbDgEahD7Eut8CnLK`; live Home same-page return-to-top check passed.
 
 ## 2026-11-02 Capability Statement PDF Refreshed
 
