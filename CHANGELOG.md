@@ -1,5 +1,11 @@
 # Change Log
 
+## 2026-11-02 Capability Statement PDF Refreshed
+
+- Replaced the website PDF with the November 2 final Capability Statement from the Profile folder, preserving `/assets/documents/PUL-Global-Partners-Capability-Statement-2026.pdf` for both the page download and embedded preview.
+- Confirmed the source and website asset are byte-identical by SHA-256. The PDF is an unencrypted, single landscape Letter page; rendered visual review completed.
+- Typecheck and optimized build (25 routes) passed. Local capability page and PDF endpoint return HTTP 200, with the PDF served as `application/pdf`; `git diff --check` passed. Production deployment follows this commit.
+
 ## 2026-11-02 Capability Card Color Refinement
 
 - Added three coordinated blue/teal accent treatments to the Capability overview cards, applied consistently to each card edge, icon tile, and solution link.
