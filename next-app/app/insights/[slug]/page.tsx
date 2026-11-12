@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: article.title,
     description: article.summary,
-    keywords: [...article.keywords],
+    alternates: { canonical: "/insights/" + slug + "/" },
     openGraph: { type: 'article', title: article.title, description: article.summary, images: [article.image] },
   };
 }
@@ -52,7 +52,7 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
       {article.faqs.length > 0 && <section className={styles.faqs}><h2>Frequently asked questions</h2>{article.faqs.map(faq => <div key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></div>)}</section>}
       <section className={styles.sources}><h2>Sources and further reading</h2><ul>{article.sources.map(source => <li key={source.href}><a href={source.href} target="_blank" rel="noreferrer">{source.label}</a></li>)}</ul></section>
       {article.relatedLinks.length > 0 && <section className={styles.relatedLinks}><h2>Related PUL services</h2><ul>{article.relatedLinks.map(item => <li key={item.href}><Link href={item.href}>{item.label}</Link></li>)}</ul></section>}
-      <div className={styles.articleEnd}><p>Explore how PUL Global Partners can support a requirement shaped around your operating context.</p><Link className="button" href="/schedule/">Request a Strategy Call<ArrowRight aria-hidden="true" /></Link></div>
+      {slug === "federal-contract-strategies" && <p><Link href="/solutions/federal-proposal-support/">Explore Federal Proposal Support</Link></p>}{slug === "federal-technology-readiness" && <p><Link href="/solutions/procurement-contract-management/">Explore Procurement &amp; Contract Management Support</Link></p>}<div className={styles.articleEnd}><p>Explore how PUL Global Partners can support a requirement shaped around your operating context.</p><Link className="button" href="/schedule/">Request a Strategy Call<ArrowRight aria-hidden="true" /></Link></div>
     </article>
   </main></SiteLayout>;
 }

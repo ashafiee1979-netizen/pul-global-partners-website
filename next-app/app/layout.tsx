@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  verification: { google: '7KZMBYCGTlxsaTn4abVUSHH7Va3CguY07rpZ_2CxLso' },
   metadataBase: new URL('https://www.pulglobal.com'),
   title: { default: 'Government Contracting & Consulting in Virginia | PUL Global Partners', template: '%s | PUL Global Partners' },
   description: 'Virginia-based, U.S.-registered implementation partner supporting federal contracting, management consulting, procurement, technology, global trade, international mission support, and capacity building.',
