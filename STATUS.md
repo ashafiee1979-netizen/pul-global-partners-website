@@ -2,6 +2,7 @@
 
 ## State
 
+- Latest refinement (2026-11-12): integrated Vercel Web Analytics in the shared Next.js root layout using `@vercel/analytics`, enabling page-view collection across routes. `npm run typecheck`, optimized production build (25 routes), and `git diff --check` passed. Commit and production deployment are being completed for this update.
 - Phase: Website review readiness and secure form delivery; owner configuration and end-to-end email verification pending
 - Plan version: 1.1 architecture amendment approved
 - Implementation authorization: Granted by user on 2026-09-16

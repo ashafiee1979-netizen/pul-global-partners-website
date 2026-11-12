@@ -1,5 +1,10 @@
 # Change Log
 
+## 2026-11-12 Vercel Analytics
+
+- Added the official `@vercel/analytics` package and mounted `<Analytics />` in the shared Next.js root layout so page views are collected across the site.
+- `npm run typecheck`, optimized production build (25 routes), and `git diff --check` passed. GitHub push and Vercel production deployment are being completed.
+
 ## 2026-11-02 Navigation Scroll Reset
 
 - Fixed same-page navigation so clicking the current page tab returns to the top, including Home. Applied the behavior to the shared logo, primary navigation, and header actions without changing cross-page or in-page anchor behavior.
