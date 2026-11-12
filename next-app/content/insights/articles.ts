@@ -38,7 +38,7 @@ export const insightsArticles = [
   },
   {
     slug: 'the-e-commerce-effect',
-    title: 'E-Commerce Logistics and Fulfillment: Building a More Reliable Supply Chain',
+    title: 'E-Commerce Logistics Trends: Inventory, Delivery & Returns',
     categories: ['E-Commerce Logistics', 'Supply Chain', 'Digital Transformation'],
     keywords: ['e-commerce logistics', 'e-commerce fulfillment', 'supply chain operations', 'inventory visibility', 'returns management', 'last-mile delivery', 'fulfillment operations'],
     reviewedOn,
@@ -46,7 +46,7 @@ export const insightsArticles = [
     imageWidth: 1400,
     imageHeight: 875,
     imageAlt: 'E-commerce fulfillment worker packing an order in an organized warehouse',
-    summary: 'Explore e-commerce fulfillment, inventory management, reverse logistics, and supply chain resilience for dependable online retail operations.',
+    summary: 'Explore e-commerce logistics trends in inventory visibility, delivery, returns, and warehouse automation. See what to evaluate before changing your fulfillment operations.',
     sections: [
       { heading: 'E-commerce logistics starts with the customer promise', paragraphs: ['U.S. Census Bureau data continues to track e-commerce as a significant part of retail sales. For online retailers, e-commerce logistics and fulfillment operations must translate customer expectations into a service model that accounts for product mix, geography, delivery cost, and return patterns.'] },
       { heading: 'Design the full order journey', paragraphs: ['Map order capture, inventory allocation, picking, packing, delivery, customer updates, returns, and refunds as one connected process. Define handoffs, service targets, exception paths, and the data each team needs to act.'] },
@@ -56,7 +56,7 @@ export const insightsArticles = [
     ],
     faqs: [],
     sources: [{ label: 'U.S. Census Bureau: Retail Sales', href: 'https://www.census.gov/retail/sales.html' }],
-    relatedLinks: [{ label: 'Procurement Facilitation & Contract Management', href: '/solutions/#procurement' }, { label: 'Global Trade & Partnerships', href: '/solutions/#trade' }],
+    relatedLinks: [{ label: 'Procurement & Contract Management Support', href: '/solutions/procurement-contract-management/' }, { label: 'Global Trade & Partnerships', href: '/solutions/#trade' }, { label: 'Technology & Digital Solutions', href: '/solutions/#technology' }],
   },
   {
     slug: 'data-analytics-business-growth',
