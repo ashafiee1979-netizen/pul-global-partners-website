@@ -4,7 +4,6 @@ import { ArrowRight, ArrowUpRight, CalendarDays, Check, ClipboardCheck, Compass,
 import { SiteLayout } from '@/components/site-layout';
 import { Counter } from '@/components/counter';
 import { InsightCarousel } from '@/components/insight-carousel';
-import { priorityServices, servicePath } from '@/content/priority-services';
 import styles from './home.module.css';
 
 const platforms = [
@@ -68,12 +67,6 @@ export default function HomePage() {
     </div></section>
 
     <section className="section capabilities" id="capabilities"><div className="shell"><div className="section-heading platform-heading"><div><p className="eyebrow section-kicker">What we do</p><h2>Integrated services<br /><span>One delivery mindset.</span></h2></div><p>Choose a focused service and explore its scope on the Solutions page. Capabilities can be combined when a requirement calls for broader coordination.</p></div>
-      <div className="fit-grid" aria-label="Federal contracting services">
-        {priorityServices.map(service => <div key={service.slug}>
-          <h3><Link className="text-link" href={servicePath(service.slug)}>{service.title}<ArrowUpRight aria-hidden="true" /></Link></h3>
-          <p>{service.description}</p>
-        </div>)}
-      </div>
       <div className={styles.platformLinks}>{platforms.map(({ title, id }) => <Link className={styles.platformCard} href={`/solutions/#${id}`} key={id}><span>{title}</span><ArrowUpRight aria-hidden="true" /></Link>)}</div>
     </div></section>
 

@@ -1,5 +1,9 @@
 # Change Log
 
+## 2026-11-12 Home Page Service Cards
+
+- Removed the three duplicate federal contracting and procurement cards from Home. Kept the existing Home service grid and the detailed service links on Solutions.
+
 ## 2026-11-12 Vercel Analytics
 
 - Added the official `@vercel/analytics` package and mounted `<Analytics />` in the shared Next.js root layout so page views are collected across the site.
