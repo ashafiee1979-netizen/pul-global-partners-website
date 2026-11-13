@@ -1,5 +1,9 @@
 # Change Log
 
+## 2026-11-12 Solutions Page Cleanup
+
+- Removed the separate federal contracting and procurement support card section from Solutions. Existing service platforms and standalone detail URLs remain unchanged.
+
 ## 2026-11-12 Home Page Service Cards
 
 - Removed the three duplicate federal contracting and procurement cards from Home. Kept the existing Home service grid and the detailed service links on Solutions.
