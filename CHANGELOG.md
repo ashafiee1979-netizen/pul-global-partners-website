@@ -1,5 +1,24 @@
 # Change Log
 
+## 2026-11-18 Approved Production Release
+
+- Owner approved the launch/AI service updates and completed QA/security fixes for GitHub and Vercel production. Pre-release typecheck and dependency audit passed. Release excludes the unrelated untracked Commitments page.
+
+## 2026-11-18 Full Local QA and Security Patching
+
+- Patched Next.js and MDX integration to 16.4.6; full dependency audit is clean.
+- Fixed invalid request-body handling, general-inquiry confirmation copy, native validation lengths, and service discussion choices. Mail routing was verified with a mock transport, without sending real mail.
+- Corrected low-contrast labels/buttons and inherited Home closing/service-detail colors; made the mobile NAICS scroll region keyboard-accessible.
+- Passed 192 route/viewport combinations, 64 internal link/fragment destinations, 24 image URLs, 24 interactions, 16 form-server cases, and 13 redirect/resource checks. No browser exceptions or final automated accessibility findings. Saved screenshots and QA report under Drive E / 09_Working Files and QA.
+- Local-only release gate retained. Existing unrelated untracked Commitments work was left intact; no GitHub push or production deployment.
+
+## 2026-11-18 Launch Services and AI Implementation - Local Review
+
+- Consolidated U.S. and international launch services into U.S. Business Launch & International Expansion, with two labelled segments preserving original descriptions, service scope, advisory notes, and the international-office-launch anchor.
+- Added a separate AI Implementation & Business Productivity platform: assessment, workflow automation, office integration, knowledge assistants, program/reporting support, staff adoption, governance, and measured pilots.
+- Aligned Home and web Capability cards and consolidated scattered AI service descriptions. No PDF replacement, GitHub push, or deployment authorized for this review.
+- Typecheck/build and 15 browser route/viewport combinations passed. Existing moderate Next.js cache advisories are recorded for follow-up.
+
 ## 2026-11-12 Solutions Page Cleanup
 
 - Removed the separate federal contracting and procurement support card section from Solutions. Existing service platforms and standalone detail URLs remain unchanged.

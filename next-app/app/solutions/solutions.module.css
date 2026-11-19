@@ -52,6 +52,10 @@
   line-height: 1.02;
 }
 
+.heroContent h1 span {
+  color: inherit;
+}
+
 .heroLead {
   max-width: 790px;
   margin-bottom: 28px;
@@ -796,7 +800,7 @@
   padding-block: 62px;
 }
 
-.platformSection:nth-of-type(2) { --platform-accent: #287c78; }
+.platformSection:nth-of-type(2) { --platform-accent: #236d69; }
 .platformSection:nth-of-type(3) { --platform-accent: #426aa7; }
 .platformSection:nth-of-type(4) { --platform-accent: #a45f3a; }
 .platformSection:nth-of-type(5) { --platform-accent: #397b86; }
@@ -814,7 +818,7 @@
 }
 
 .platformNumber {
-  color: var(--platform-accent);
+  color: #28566b;
   font-size: 11px;
   letter-spacing: .08em;
 }
@@ -861,7 +865,7 @@
   padding: 0;
   border-radius: 4px;
   background: color-mix(in srgb, var(--platform-accent) 10%, white);
-  color: var(--platform-accent);
+  color: #28566b;
   font-size: 11px;
 }
 
@@ -1276,6 +1280,89 @@
 
 .businessLaunch {
   background: #f0f5f7;
+}
+
+.launchSegments {
+  display: grid;
+  gap: 36px;
+}
+
+.segmentNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--solutions-line);
+}
+
+.segmentNav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #176589;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.segmentNav svg {
+  width: 16px;
+  height: 16px;
+}
+
+.launchSegment {
+  scroll-margin-top: 110px;
+}
+
+.launchSegment + .launchSegment {
+  padding-top: 36px;
+  border-top: 1px solid var(--solutions-line);
+}
+
+.segmentHeading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+.segmentHeading :global(.eyebrow) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.segmentHeading svg {
+  width: 20px;
+  height: 20px;
+}
+
+.segmentHeading h3 {
+  margin: 0;
+  color: #176589;
+  font-size: 28px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.segmentHeading > p {
+  margin: 0;
+  color: var(--solutions-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.serviceCard h4 {
+  margin: 1px 0 8px;
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.38;
+}
+
+@media (max-width: 760px) {
+  .segmentHeading { grid-template-columns: 1fr; gap: 14px; }
+  .segmentHeading h3 { font-size: 25px; }
 }
 
 .businessDevelopmentSection {

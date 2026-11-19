@@ -38,7 +38,7 @@ export default async function ServicePage({ params }: Props) {
     </div></section>
     <section className="section"><div className="shell">
       <h2>How PUL can help</h2>
-      <div className="fit-grid">
+      <div className="fit-grid service-detail-grid">
         {service.deliverables.map(([title, description]) => <article key={title}><h3>{title}</h3><p>{description}</p></article>)}
       </div>
       <h2>Explore related resources</h2>

@@ -7,8 +7,8 @@ import { InsightCarousel } from '@/components/insight-carousel';
 import styles from './home.module.css';
 
 const platforms = [
-  { title: 'U.S. Business Launch Support', id: 'business-launch' },
-  { title: 'International Office Launch Support', id: 'international-office-launch' },
+  { title: 'U.S. Business Launch & International Expansion', id: 'business-launch' },
+  { title: 'AI Implementation & Business Productivity', id: 'ai-implementation' },
   { title: 'Business Development & Proposal Support', id: 'business-development' },
   { title: 'Management Consulting & Advisory', id: 'management' },
   { title: 'Procurement Facilitation & Contract Management', id: 'procurement' },

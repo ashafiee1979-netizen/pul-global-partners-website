@@ -82,9 +82,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Please check the form and try again.' }, { status: 400 });
   }
 
+  if (!body || typeof body !== 'object' || Array.isArray(body)) {
+    return NextResponse.json({ error: 'Please check the form and try again.' }, { status: 400 });
+  }
+
   const formType = body.formType;
   const values = body.values;
-  if (typeof formType !== 'string' || !Object.hasOwn(recipients, formType) || !values || typeof values !== 'object') {
+  if (typeof formType !== 'string' || !Object.hasOwn(recipients, formType) || !values || typeof values !== 'object' || Array.isArray(values)) {
     return NextResponse.json({ error: 'Please check the form and try again.' }, { status: 400 });
   }
 
@@ -161,10 +165,12 @@ export async function POST(request: Request) {
       from,
       to: { name, address: email },
       replyTo: recipients[formType],
-      subject: isPartnership ? 'Thank you for contacting PUL Global Partners' : 'We received your Strategy Call request',
+      subject: formType === 'strategy-call' ? 'We received your Strategy Call request' : 'Thank you for contacting PUL Global Partners',
       text: isPartnership
         ? `Hello ${name},\n\nThank you for reaching out to PUL Global Partners. We have received your partnership inquiry and will review the opportunity and your organization’s capabilities. Our team will follow up using this email address.\n\nRegards,\nPUL Global Partners\ninfo@pulglobal.com\n+1-540-993-7496`
-        : `Hello ${name},\n\nThank you for contacting PUL Global Partners. We have received your Strategy Call request and will review the details. This confirmation is not a calendar booking; our team will follow up to coordinate availability.\n\nRegards,\nPUL Global Partners\ninfo@pulglobal.com\n+1-540-993-7496`,
+        : formType === 'strategy-call'
+          ? `Hello ${name},\n\nThank you for contacting PUL Global Partners. We have received your Strategy Call request and will review the details. This confirmation is not a calendar booking; our team will follow up to coordinate availability.\n\nRegards,\nPUL Global Partners\ninfo@pulglobal.com\n+1-540-993-7496`
+          : `Hello ${name},\n\nThank you for contacting PUL Global Partners. We have received your inquiry and will review the details. Our team will follow up using this email address.\n\nRegards,\nPUL Global Partners\ninfo@pulglobal.com\n+1-540-993-7496`,
     });
     return NextResponse.json({ success: true, acknowledgementSent: true });
   } catch (error) {

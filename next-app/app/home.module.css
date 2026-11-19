@@ -56,7 +56,7 @@
 .home :global(.section-heading > p),
 .home :global(.buyer-grid > div:first-child > p:last-child),
 .home :global(.capability-panel p:not(.eyebrow)),
-.home :global(.contact-form-grid > div > p:not(.eyebrow)) {
+.home :global(main .contact .contact-form-grid > div > p:not(.eyebrow)) {
   color: var(--home-muted);
   font-size: 16px;
   line-height: 1.7;
@@ -303,22 +303,22 @@
 }
 
 .home :global(.delivery-framework article:nth-of-type(2)) {
-  --gate-accent: #187da8;
+  --gate-accent: #166b91;
   --gate-tint: #f0f8fb;
 }
 
 .home :global(.delivery-framework article:nth-of-type(3)) {
-  --gate-accent: #287c78;
+  --gate-accent: #236d69;
   --gate-tint: #f0f8f6;
 }
 
 .home :global(.delivery-framework article:nth-of-type(4)) {
-  --gate-accent: #527d4b;
+  --gate-accent: #436a3c;
   --gate-tint: #f4f8f1;
 }
 
 .home :global(.delivery-framework article:nth-of-type(5)) {
-  --gate-accent: #a45f3a;
+  --gate-accent: #8d4f2d;
   --gate-tint: #fbf5f0;
 }
 
@@ -440,7 +440,7 @@
   line-height: 1.12;
 }
 
-.home :global(.contact-form-grid > div > p:not(.eyebrow)) {
+.home :global(main .contact .contact-form-grid > div > p:not(.eyebrow)) {
   color: #fff;
   margin-block: 14px 20px;
 }
@@ -455,7 +455,7 @@
   font-size: 22px;
 }
 
-.home :global(.contact-form-placeholder p) {
+.home :global(main .contact .contact-form-placeholder p) {
   color: #fff;
   font-size: 14px;
   line-height: 1.6;
@@ -743,7 +743,7 @@
 .home :global(.section-heading > p),
 .home :global(.intro-copy p),
 .home :global(.buyer-grid > div:first-child > p:not(.eyebrow)),
-.home :global(.contact-form-grid > div > p:not(.eyebrow)) {
+.home :global(main .contact .contact-form-grid > div > p:not(.eyebrow)) {
   font-size: 16px;
   line-height: 1.68;
 }

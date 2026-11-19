@@ -2,6 +2,13 @@
 
 ## State
 
+- Release authorized (2026-11-18): owner approved pushing and deploying the combined launch service, separate AI service, Next.js/MDX 16.4.6 patch, and QA fixes. GitHub/Vercel release in progress. The unrelated untracked Commitments page and generated environment-type changes are excluded.
+
+- Latest local QA (2026-11-18): Next.js and @next/mdx patched to 16.4.6; npm audit reports zero known vulnerabilities. Fixed request-shape handling, general-inquiry acknowledgements, form validation/service options, text contrast, service-detail inherited colors, and mobile NAICS keyboard access. Final tests pass: 192 page/viewport combinations across 24 local pages and 8 widths; 64 internal destinations/fragments, 24 image URLs, 24 interactions, 16 mocked form-server cases, and 13 HTTP/resource checks. Automated WCAG checks at desktop/mobile report no detected violations. No push/deployment; local review remains at http://localhost:4180/. Full evidence: E:\PUL Global Partners\09_Working Files and QA\QA Reviews\Website Full QA 2026-11-18\QA-REPORT.md.
+
+- Local review only (2026-11-18): combined U.S. Business Launch and International Expansion into one platform with two segments, preserving their prior descriptions, scope, advisory notes, and international anchor. Added AI Implementation & Business Productivity across Home, Solutions, and the web Capability overview; downloadable PDF unchanged. Production must remain unchanged pending owner approval. Preview: http://localhost:4180/solutions/. Existing untracked commitments page was not edited.
+- Validation (2026-11-18): typecheck and production build passed; browser checks passed across Home, Solutions, and Capability at 1440, 1280, 768, 390, and 360 px, including unique anchors, navigation, and no horizontal overflow. Evidence is filed in Drive E under 09_Working Files and QA / QA Reviews / Website Launch and AI 2026-11-18. Dependency audit reports moderate Next.js cache advisories; framework patching is a separate follow-up before a production release.
+
 - Latest refinement (2026-11-12): integrated Vercel Web Analytics in the shared Next.js root layout using `@vercel/analytics`, enabling page-view collection across routes. `npm run typecheck`, optimized production build (25 routes), and `git diff --check` passed. Commit and production deployment are being completed for this update.
 - Phase: Website review readiness and secure form delivery; owner configuration and end-to-end email verification pending
 - Plan version: 1.1 architecture amendment approved
