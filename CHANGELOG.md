@@ -1,5 +1,10 @@
 # Change Log
 
+## 2026-11-18 Updated Capability Statement PDF
+
+- Replaced the public Capability Statement with the updated final PDF from 02_Capability Statements and Presentations / Capability Statements / 2026 Final, reflecting the combined launch/expansion platform and separate AI service.
+- Preserved the existing download/preview URL. Verified a byte-identical copy by SHA-256; inspected the one-page landscape Letter rendering. Typecheck and production build passed. Publication approved; live verification follows deployment.
+
 ## 2026-11-18 Capability Inquiry Links
 
 - Routed both Capability page requirement-gathering CTAs to /schedule/ instead of /contact/. The closing CTA now says Request a Strategy Call; the eyebrow says Discuss your requirement.

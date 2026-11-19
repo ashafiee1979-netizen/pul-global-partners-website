@@ -2,6 +2,8 @@
 
 ## State
 
+- Updated Capability Statement publication (2026-11-18): current final PDF copied from the numbered Capability Statements folder, including combined launch/expansion and separate AI services. Source and public asset SHA-256 match (14032E42A2EC8114B9E1D8A3DD9E31C116B79BC869676137A194537F77F8EA73). One-page landscape rendering reviewed; typecheck/build passed. Stable website PDF URL preserved; deployment and live hash verification in progress.
+
 - Capability inquiry routing (2026-11-18): both page-specific inquiry CTAs now target /schedule/ for requirement gathering, not the partnership form. Commit c5d0f5e deployed as dpl_FjNBQJoo7H3eCankUBnQao7u7piF (Ready). Both CTAs opened the strategy-call form in all six live click-through tests at 1440, 768, and 390 px; shared partnership navigation, nine service links, and PDF downloads are preserved. Typecheck/build passed. No email sent. Evidence: Website Full QA 2026-11-18 / capability-links-results.json.
 
 - Production release (2026-11-18): approved changes pushed in commit 42504c7 and deployed as dpl_9rVVSihB4epEKZYxP3gt9WHKfJJj (Ready), assigned to www.pulglobal.com and pulglobal.com. The combined launch service, separate AI service, Next.js/MDX 16.4.6 patch, and QA fixes are live. All 21 post-deployment page/viewport checks passed at 1440, 768, and 390 px, including service structure, form choices, and PDF availability; no browser exceptions or horizontal overflow. No real emails sent. Unrelated untracked Commitments work and generated environment-type changes were excluded.
