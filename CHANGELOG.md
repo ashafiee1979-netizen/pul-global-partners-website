@@ -3,7 +3,7 @@
 ## 2026-11-18 Capability Inquiry Links
 
 - Routed both Capability page requirement-gathering CTAs to /schedule/ instead of /contact/. The closing CTA now says Request a Strategy Call; the eyebrow says Discuss your requirement.
-- Retained PDF downloads, all nine Solutions detail links, and shared partnership navigation. Typecheck, production build, and rendered CTA checks passed; live click-through verification follows deployment.
+- Retained PDF downloads, all nine Solutions detail links, and shared partnership navigation. Typecheck, production build, and rendered CTA checks passed. Commit c5d0f5e deployed as dpl_FjNBQJoo7H3eCankUBnQao7u7piF (Ready); six live click-through tests passed across desktop, tablet, and mobile, with no browser exceptions or real mail sent.
 
 ## 2026-11-18 Approved Production Release
 
