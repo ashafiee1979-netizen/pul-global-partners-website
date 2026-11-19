@@ -3,6 +3,7 @@
 ## 2026-11-18 Approved Production Release
 
 - Owner approved the launch/AI service updates and completed QA/security fixes for GitHub and Vercel production. Pre-release typecheck and dependency audit passed. Release excludes the unrelated untracked Commitments page.
+- Commit 42504c7 deployed as dpl_9rVVSihB4epEKZYxP3gt9WHKfJJj (Ready) on both custom-domain aliases. Live checks passed for seven primary routes at 1440, 768, and 390 px, updated services and form choices, and the Capability Statement PDF. No browser exceptions, horizontal overflow, or real email submissions.
 
 ## 2026-11-18 Full Local QA and Security Patching
 
