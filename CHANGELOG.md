@@ -1,5 +1,10 @@
 # Change Log
 
+## 2026-11-18 Capability Inquiry Links
+
+- Routed both Capability page requirement-gathering CTAs to /schedule/ instead of /contact/. The closing CTA now says Request a Strategy Call; the eyebrow says Discuss your requirement.
+- Retained PDF downloads, all nine Solutions detail links, and shared partnership navigation. Typecheck, production build, and rendered CTA checks passed; live click-through verification follows deployment.
+
 ## 2026-11-18 Approved Production Release
 
 - Owner approved the launch/AI service updates and completed QA/security fixes for GitHub and Vercel production. Pre-release typecheck and dependency audit passed. Release excludes the unrelated untracked Commitments page.

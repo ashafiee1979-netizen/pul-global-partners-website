@@ -2,6 +2,8 @@
 
 ## State
 
+- Capability inquiry routing (2026-11-18): both page-specific inquiry CTAs now target /schedule/ for requirement gathering, not the partnership form. Shared partnership navigation and service/PDF links are unchanged. Typecheck/build and rendered-link checks passed; production release and live click-through checks in progress.
+
 - Production release (2026-11-18): approved changes pushed in commit 42504c7 and deployed as dpl_9rVVSihB4epEKZYxP3gt9WHKfJJj (Ready), assigned to www.pulglobal.com and pulglobal.com. The combined launch service, separate AI service, Next.js/MDX 16.4.6 patch, and QA fixes are live. All 21 post-deployment page/viewport checks passed at 1440, 768, and 390 px, including service structure, form choices, and PDF availability; no browser exceptions or horizontal overflow. No real emails sent. Unrelated untracked Commitments work and generated environment-type changes were excluded.
 
 - Latest local QA (2026-11-18): Next.js and @next/mdx patched to 16.4.6; npm audit reports zero known vulnerabilities. Fixed request-shape handling, general-inquiry acknowledgements, form validation/service options, text contrast, service-detail inherited colors, and mobile NAICS keyboard access. Final tests pass: 192 page/viewport combinations across 24 local pages and 8 widths; 64 internal destinations/fragments, 24 image URLs, 24 interactions, 16 mocked form-server cases, and 13 HTTP/resource checks. Automated WCAG checks at desktop/mobile report no detected violations. No push/deployment; local review remains at http://localhost:4180/. Full evidence: E:\PUL Global Partners\09_Working Files and QA\QA Reviews\Website Full QA 2026-11-18\QA-REPORT.md.
