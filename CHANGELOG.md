@@ -3,7 +3,7 @@
 ## 2026-11-18 Updated Capability Statement PDF
 
 - Replaced the public Capability Statement with the updated final PDF from 02_Capability Statements and Presentations / Capability Statements / 2026 Final, reflecting the combined launch/expansion platform and separate AI service.
-- Preserved the existing download/preview URL. Verified a byte-identical copy by SHA-256; inspected the one-page landscape Letter rendering. Typecheck and production build passed. Publication approved; live verification follows deployment.
+- Preserved the existing download/preview URL. Verified a byte-identical copy by SHA-256; inspected the one-page landscape Letter rendering. Typecheck/build passed. Commit a7a8409 deployed as dpl_27vAAg9yvAGPsp2bYP6E6kKTKz8J (Ready). Live PDF hash matches the source; three download links and the embedded preview are correct at desktop, tablet, and phone widths.
 
 ## 2026-11-18 Capability Inquiry Links
 

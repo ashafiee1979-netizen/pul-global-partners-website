@@ -2,7 +2,7 @@
 
 ## State
 
-- Updated Capability Statement publication (2026-11-18): current final PDF copied from the numbered Capability Statements folder, including combined launch/expansion and separate AI services. Source and public asset SHA-256 match (14032E42A2EC8114B9E1D8A3DD9E31C116B79BC869676137A194537F77F8EA73). One-page landscape rendering reviewed; typecheck/build passed. Stable website PDF URL preserved; deployment and live hash verification in progress.
+- Updated Capability Statement publication (2026-11-18): final PDF including combined launch/expansion and separate AI services published in commit a7a8409; deployment dpl_27vAAg9yvAGPsp2bYP6E6kKTKz8J is Ready. Downloaded live PDF matches the final source SHA-256 (14032E42A2EC8114B9E1D8A3DD9E31C116B79BC869676137A194537F77F8EA73). One-page landscape rendering reviewed; typecheck/build passed. Three download links, embedded preview, call CTAs, and page width verified live at 1440, 768, and 390 px. Evidence: Capability PDF Release 2026-11-18 / live-results.json.
 
 - Capability inquiry routing (2026-11-18): both page-specific inquiry CTAs now target /schedule/ for requirement gathering, not the partnership form. Commit c5d0f5e deployed as dpl_FjNBQJoo7H3eCankUBnQao7u7piF (Ready). Both CTAs opened the strategy-call form in all six live click-through tests at 1440, 768, and 390 px; shared partnership navigation, nine service links, and PDF downloads are preserved. Typecheck/build passed. No email sent. Evidence: Website Full QA 2026-11-18 / capability-links-results.json.
 
